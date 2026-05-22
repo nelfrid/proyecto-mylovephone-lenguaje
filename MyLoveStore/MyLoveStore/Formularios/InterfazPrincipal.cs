@@ -15,29 +15,25 @@ namespace MyLoveStore
 
     public partial class InterfazPrincipal : Form
     {
-        public InterfazPrincipal()
+
+        private Ajustes pageSettings;
+
+        public InterfazPrincipal(Ajustes pageSettings)
         {
             InitializeComponent();
+            this.pageSettings = pageSettings;
         }
 
-        private void ActivateDarkModePage()
+        private void InterFazPrincipal_FormLoad(object sender, EventArgs e)
         {
-            if(this.BackColor != Color.White)
-            {
-                this.BackColor = Color.White;
-                
-            }
-            else
-            {
-                this.BackColor = Color.FromArgb(70, 70, 70);
-                // Aqui se agregan todas las cosas que van cambian para adaptarse al modo oscuro.
-            }
-            
+            Ajustes pageSettings = new Ajustes();
+            pageSettings.FormTheme();
         }
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            ActivateDarkModePage();
+            // ActivateDarkModePage();
         }
 
         private void InterfazPrincipal_Load(object sender, EventArgs e)
@@ -45,14 +41,6 @@ namespace MyLoveStore
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
