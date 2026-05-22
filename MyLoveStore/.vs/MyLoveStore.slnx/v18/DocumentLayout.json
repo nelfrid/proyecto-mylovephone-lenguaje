@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lennguaje de programaci\u00F3n i\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lennguaje de programaci\u00F3n i\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lennguaje de programaci\u00F3n i\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormFacturaFinal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T00:54:23.991Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEntradaDatosFactura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
+              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T00:25:07.226Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterfazPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lennguaje de Programaci\u00F3n I\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T00:07:28.156Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
