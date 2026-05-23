@@ -1,0 +1,8 @@
+.vs/
+**/.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vsidx
+/MyLoveStore/.vs/MyLoveStore.slnx/FileContentIndex/0636e8c5-c6e1-4382-a87b-1be33b60579a.vsidx
