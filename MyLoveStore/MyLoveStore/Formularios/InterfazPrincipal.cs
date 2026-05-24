@@ -10,30 +10,11 @@ using System.Windows.Forms;
 
 namespace MyLoveStore
 {
-
-    
-
     public partial class InterfazPrincipal : Form
     {
-
-        private Ajustes pageSettings;
-
-        public InterfazPrincipal(Ajustes pageSettings)
+        public InterfazPrincipal()
         {
             InitializeComponent();
-            this.pageSettings = pageSettings;
-        }
-
-        private void InterFazPrincipal_FormLoad(object sender, EventArgs e)
-        {
-            Ajustes pageSettings = new Ajustes();
-            pageSettings.FormTheme();
-        }
-
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            // ActivateDarkModePage();
         }
 
         private void InterfazPrincipal_Load(object sender, EventArgs e)
@@ -41,6 +22,19 @@ namespace MyLoveStore
 
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // ActivateDarkModePage();
+        }
     }
 }

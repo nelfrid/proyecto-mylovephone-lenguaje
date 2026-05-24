@@ -16,5 +16,10 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         {
             InitializeComponent();
         }
+
+        private void FormEntradaDatosFactura_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
