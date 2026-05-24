@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPerfilDeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPerfilDeAdmin.Designer.cs">
+      <DependentUpon>frmPerfilDeAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\InterfazPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPerfilDeAdmin.resx">
+      <DependentUpon>frmPerfilDeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InterfazPrincipal.resx">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Sistema Facturación\FormEntradaDatosFactura.resx">
       <DependentUpon>FormEntradaDatosFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sistema Facturación\FormFacturaFinal.es-PA.resx">
+      <DependentUpon>FormFacturaFinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Sistema Facturación\FormFacturaFinal.resx">
       <DependentUpon>FormFacturaFinal.cs</DependentUpon>
@@ -83,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +121,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formularios\Inventario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nueva-cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engranajes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luna-creciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_gh4pvvgh4pvvgh4p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_vu7ezavu7ezavu7e.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
