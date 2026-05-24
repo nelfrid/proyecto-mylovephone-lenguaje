@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lenguaje\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lenguaje\\mylovestore\\mylovestore\\formularios\\frmperfildeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\frmperfildeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lenguaje\\mylovestore\\mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\nxlfr\\onedrive\\desktop\\proyecto lenguaje\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmPerfilDeAdmin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs",
+              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T23:36:53.669Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InterfazPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
               "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T07:40:55.328Z",
+              "WhenOpened": "2026-05-24T23:36:46.193Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InterfazPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\frmLogin.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\nxlfr\\OneDrive\\Desktop\\Proyecto Lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\frmLogin.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T16:09:53.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T23:35:16.333Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
