@@ -26,5 +26,30 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         {
 
         }
+
+        private void panelDatos_Paint(object sender, PaintEventArgs e)
+        {
+            System.Drawing.Drawing2D.GraphicsPath ruta = new System.Drawing.Drawing2D.GraphicsPath();
+            int radio = 20; // Controla qué tan redondo es el borde
+
+            ruta.AddArc(0, 0, radio, radio, 180, 90);
+            ruta.AddArc(panelDatos.Width - radio, 0, radio, radio, 270, 90);
+            ruta.AddArc(panelDatos.Width - radio, panelDatos.Height - radio, radio, radio, 0, 90);
+            ruta.AddArc(0, panelDatos.Height - radio, radio, radio, 90, 90);
+
+            // Aplicar la región redondeada al panel
+            panelDatos.Region = new Region(ruta);
+        }
+
+        private void panelCard_Paint(object sender, PaintEventArgs e)
+        {
+            System.Drawing.Drawing2D.GraphicsPath ruta = new System.Drawing.Drawing2D.GraphicsPath();
+            int radio = 20; // Nivel de redondeado
+            ruta.AddArc(0, 0, radio, radio, 180, 90);
+            ruta.AddArc(panelCard.Width - radio, 0, radio, radio, 270, 90);
+            ruta.AddArc(panelCard.Width - radio, panelCard.Height - radio, radio, radio, 0, 90);
+            ruta.AddArc(0, panelCard.Height - radio, radio, radio, 90, 90);
+            panelCard.Region = new Region(ruta);
+        }
     }
 }
