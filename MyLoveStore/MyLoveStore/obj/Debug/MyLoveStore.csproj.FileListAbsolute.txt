@@ -1,0 +1,21 @@
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe.config
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.pdb
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.AssemblyReference.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Properties.Resources.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.GenerateResource.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.CoreCompileInputs.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.InterfazPrincipal.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lennguaje de Programación I\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.AssemblyReference.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.InterfazPrincipal.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Properties.Resources.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.GenerateResource.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.CoreCompileInputs.cache
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
