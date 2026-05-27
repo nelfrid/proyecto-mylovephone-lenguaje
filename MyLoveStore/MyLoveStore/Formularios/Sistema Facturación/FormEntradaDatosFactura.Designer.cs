@@ -42,7 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.panelCard = new System.Windows.Forms.Panel();
             this.numCantidadProducto = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -148,9 +148,9 @@
             this.panelDatos.Controls.Add(this.label7);
             this.panelDatos.Controls.Add(this.txtCedula);
             this.panelDatos.Controls.Add(this.label8);
-            this.panelDatos.Controls.Add(this.textBox1);
+            this.panelDatos.Controls.Add(this.txtNombre);
             this.panelDatos.Location = new System.Drawing.Point(35, 206);
-            this.panelDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelDatos.Margin = new System.Windows.Forms.Padding(2);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(594, 408);
             this.panelDatos.TabIndex = 15;
@@ -161,11 +161,12 @@
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreo.Location = new System.Drawing.Point(98, 233);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(312, 28);
             this.txtCorreo.TabIndex = 12;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // label6
             // 
@@ -194,11 +195,12 @@
             this.txtCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCedula.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCedula.Location = new System.Drawing.Point(98, 126);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(2);
             this.txtCedula.Multiline = true;
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(312, 28);
             this.txtCedula.TabIndex = 10;
+            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // label8
             // 
@@ -211,16 +213,17 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Cédula:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(205, 38);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(205, 38);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(326, 26);
+            this.txtNombre.TabIndex = 7;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // panelCard
             // 
@@ -234,7 +237,7 @@
             this.panelCard.Controls.Add(this.txtNumeroFactura);
             this.panelCard.Controls.Add(this.label9);
             this.panelCard.Location = new System.Drawing.Point(673, 206);
-            this.panelCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelCard.Margin = new System.Windows.Forms.Padding(2);
             this.panelCard.Name = "panelCard";
             this.panelCard.Size = new System.Drawing.Size(668, 408);
             this.panelCard.TabIndex = 16;
@@ -243,7 +246,7 @@
             // numCantidadProducto
             // 
             this.numCantidadProducto.Location = new System.Drawing.Point(319, 296);
-            this.numCantidadProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numCantidadProducto.Margin = new System.Windows.Forms.Padding(2);
             this.numCantidadProducto.Name = "numCantidadProducto";
             this.numCantidadProducto.Size = new System.Drawing.Size(88, 22);
             this.numCantidadProducto.TabIndex = 7;
@@ -262,7 +265,7 @@
             // txtNombreProducto
             // 
             this.txtNombreProducto.Location = new System.Drawing.Point(319, 232);
-            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreProducto.Multiline = true;
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(319, 30);
@@ -282,7 +285,7 @@
             // txtFechaProducto
             // 
             this.txtFechaProducto.Location = new System.Drawing.Point(319, 148);
-            this.txtFechaProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFechaProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaProducto.Multiline = true;
             this.txtFechaProducto.Name = "txtFechaProducto";
             this.txtFechaProducto.Size = new System.Drawing.Size(319, 30);
@@ -302,7 +305,7 @@
             // txtNumeroFactura
             // 
             this.txtNumeroFactura.Location = new System.Drawing.Point(319, 54);
-            this.txtNumeroFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroFactura.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroFactura.Multiline = true;
             this.txtNumeroFactura.Name = "txtNumeroFactura";
             this.txtNumeroFactura.Size = new System.Drawing.Size(319, 30);
@@ -325,12 +328,13 @@
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiguiente.Location = new System.Drawing.Point(1223, 647);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(117, 38);
             this.btnSiguiente.TabIndex = 18;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnVolver
             // 
@@ -338,7 +342,7 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.Location = new System.Drawing.Point(35, 641);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(117, 38);
             this.btnVolver.TabIndex = 17;
@@ -347,7 +351,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(582, 126);
+            this.button1.Location = new System.Drawing.Point(621, 126);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 42);
             this.button1.TabIndex = 19;
@@ -402,7 +406,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Panel panelCard;
         private System.Windows.Forms.NumericUpDown numCantidadProducto;
         private System.Windows.Forms.Label label3;

@@ -171,8 +171,8 @@
     <None Include="Resources\Gemini_Generated_Image_vu7ezavu7ezavu7e.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Inventario del proyecto2.accdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Basedatos\Inventario del proyecto2.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
