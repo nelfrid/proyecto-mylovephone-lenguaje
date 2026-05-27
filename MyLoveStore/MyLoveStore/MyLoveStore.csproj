@@ -152,6 +152,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Base de datos\" />
     <Folder Include="Formularios\Inventario\" />
   </ItemGroup>
   <ItemGroup>

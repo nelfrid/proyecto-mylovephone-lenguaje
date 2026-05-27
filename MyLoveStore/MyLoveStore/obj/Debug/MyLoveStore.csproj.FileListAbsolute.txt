@@ -19,3 +19,22 @@ C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\De
 C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.CoreCompileInputs.cache
 C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
 C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\Inventario del proyecto2.accdb
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe.config
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.pdb
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\es-PA\MyLoveStore.resources.dll
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.AssemblyReference.cache
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmLogin.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmPerfilDeAdmin.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.InterfazPrincipal.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Inventario1.Inventario.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Properties.Resources.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.es-PA.resources
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.GenerateResource.cache
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.CoreCompileInputs.cache
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
