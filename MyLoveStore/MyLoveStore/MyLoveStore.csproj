@@ -85,6 +85,12 @@
     <Compile Include="Formularios\InterfazPrincipal.Designer.cs">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Inventario1\Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inventario1\Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Sistema Facturación\FormEntradaDatosFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InterfazPrincipal.resx">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inventario1\Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Sistema Facturación\FormEntradaDatosFactura.resx">
       <DependentUpon>FormEntradaDatosFactura.cs</DependentUpon>
@@ -140,9 +149,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Inventario\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\nueva-cuenta.png" />
   </ItemGroup>
