@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyLoveStore.Formularios.Sistema_Facturación
@@ -50,6 +44,22 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             ruta.AddArc(panelCard.Width - radio, panelCard.Height - radio, radio, radio, 0, 90);
             ruta.AddArc(0, panelCard.Height - radio, radio, radio, 90, 90);
             panelCard.Region = new Region(ruta);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+                    MessageBox.Show("Conexión exitosa con Access.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error de conexión: " + ex.Message);
+            }
         }
     }
 }
