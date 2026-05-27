@@ -152,7 +152,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Base de datos\" />
     <Folder Include="Formularios\Inventario\" />
   </ItemGroup>
   <ItemGroup>
@@ -172,7 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Basedatos\Inventario del proyecto2.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
