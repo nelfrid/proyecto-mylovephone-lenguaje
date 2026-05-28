@@ -38,3 +38,13 @@ C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\bin\Debug\Basedatos\Inventario del proyecto2.accdb
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe.config
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.pdb
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\bin\Debug\es-PA\MyLoveStore.resources.dll
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmLogin.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmPerfilDeAdmin.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Inventario1.Inventario.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.es-PA.resources
+C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
