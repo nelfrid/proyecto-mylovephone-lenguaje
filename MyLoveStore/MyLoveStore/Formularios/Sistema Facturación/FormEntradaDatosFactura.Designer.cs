@@ -47,7 +47,7 @@
             this.numCantidadProducto = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtProductoadquirido = new System.Windows.Forms.Label();
             this.txtFechaProducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNumeroFactura = new System.Windows.Forms.TextBox();
@@ -231,7 +231,7 @@
             this.panelCard.Controls.Add(this.numCantidadProducto);
             this.panelCard.Controls.Add(this.label3);
             this.panelCard.Controls.Add(this.txtNombreProducto);
-            this.panelCard.Controls.Add(this.label4);
+            this.panelCard.Controls.Add(this.txtProductoadquirido);
             this.panelCard.Controls.Add(this.txtFechaProducto);
             this.panelCard.Controls.Add(this.label5);
             this.panelCard.Controls.Add(this.txtNumeroFactura);
@@ -250,6 +250,7 @@
             this.numCantidadProducto.Name = "numCantidadProducto";
             this.numCantidadProducto.Size = new System.Drawing.Size(88, 22);
             this.numCantidadProducto.TabIndex = 7;
+            this.numCantidadProducto.ValueChanged += new System.EventHandler(this.numCantidadProducto_ValueChanged);
             // 
             // label3
             // 
@@ -270,17 +271,18 @@
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(319, 30);
             this.txtNombreProducto.TabIndex = 5;
+            this.txtNombreProducto.TextChanged += new System.EventHandler(this.txtNombreProducto_TextChanged);
             // 
-            // label4
+            // txtProductoadquirido
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 226);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Producto aquirido:";
+            this.txtProductoadquirido.AutoSize = true;
+            this.txtProductoadquirido.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductoadquirido.Location = new System.Drawing.Point(43, 226);
+            this.txtProductoadquirido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtProductoadquirido.Name = "txtProductoadquirido";
+            this.txtProductoadquirido.Size = new System.Drawing.Size(194, 25);
+            this.txtProductoadquirido.TabIndex = 4;
+            this.txtProductoadquirido.Text = "Producto adquirido:";
             // 
             // txtFechaProducto
             // 
@@ -290,6 +292,7 @@
             this.txtFechaProducto.Name = "txtFechaProducto";
             this.txtFechaProducto.Size = new System.Drawing.Size(319, 30);
             this.txtFechaProducto.TabIndex = 3;
+            this.txtFechaProducto.TextChanged += new System.EventHandler(this.txtFechaProducto_TextChanged);
             // 
             // label5
             // 
@@ -310,6 +313,7 @@
             this.txtNumeroFactura.Name = "txtNumeroFactura";
             this.txtNumeroFactura.Size = new System.Drawing.Size(319, 30);
             this.txtNumeroFactura.TabIndex = 1;
+            this.txtNumeroFactura.TextChanged += new System.EventHandler(this.txtNumeroFactura_TextChanged);
             // 
             // label9
             // 
@@ -411,7 +415,7 @@
         private System.Windows.Forms.NumericUpDown numCantidadProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNombreProducto;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label txtProductoadquirido;
         private System.Windows.Forms.TextBox txtFechaProducto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNumeroFactura;

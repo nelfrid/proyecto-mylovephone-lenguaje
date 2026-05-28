@@ -12,11 +12,88 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             InitializeComponent();
         }
 
-        private void FormEntradaDatosFactura_Load(object sender, EventArgs e)
+        private void GuardarCliente()
         {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string consulta = @"INSERT INTO Clientes 
+                (NombreCliente, CedulaCliente, CorreoCliente) 
+                VALUES (?, ?, ?)";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", txtNombre.Text);
+                    comando.Parameters.AddWithValue("?", txtCedula.Text);
+                    comando.Parameters.AddWithValue("?", txtCorreo.Text);
+
+                    comando.ExecuteNonQuery();
+                }
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void GuardarFactura()
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string consulta = @"INSERT INTO Facturas
+                (IdCliente, NumeroFactura, FechaFacturacion, SubtotalFactura, ImpuestoFactura, TotalFactura, EstadoFactura)
+                VALUES (?, ?, ?, ?, ?, ?, ?)";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", 1);
+                    comando.Parameters.AddWithValue("?", txtNumeroFactura.Text);
+                    comando.Parameters.AddWithValue("?", txtFechaProducto.Text);
+                    comando.Parameters.AddWithValue("?", 0);
+                    comando.Parameters.AddWithValue("?", 0);
+                    comando.Parameters.AddWithValue("?", 0);
+                    comando.Parameters.AddWithValue("?", "Pendiente");
+
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                GuardarCliente();
+                GuardarFactura();
+
+                MessageBox.Show("Datos guardados correctamente.");
+
+                FormFacturaFinal formFacturaFinal = new FormFacturaFinal();
+                formFacturaFinal.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar los datos: " + ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+                    MessageBox.Show("Conexión exitosa con Access.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error de conexión: " + ex.Message);
+            }
+        }
+
+        private void FormEntradaDatosFactura_Load(object sender, EventArgs e)
         {
         }
 
@@ -46,53 +123,8 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             panelCard.Region = new Region(ruta);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (var conexion = ConexionBD.ObtenerConexion())
-                {
-                    conexion.Open();
-                    MessageBox.Show("Conexión exitosa con Access.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error de conexión: " + ex.Message);
-            }
-        }
-
-        private void GuardarCliente()
-        {
-            try
-            {
-                using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
-                {
-                    conexion.Open();
-
-                    string consulta = "INSERT INTO Clientes (NombreCliente, CedulaCliente, CorreoCliente) VALUES (?, ?, ?)";
-
-                    using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
-                    {
-                        comando.Parameters.AddWithValue("?", txtNombre.Text);
-                        comando.Parameters.AddWithValue("?", txtCedula.Text);
-                        comando.Parameters.AddWithValue("?", txtCorreo.Text);
-
-                        comando.ExecuteNonQuery();
-                    }
-                }
-
-                MessageBox.Show("Cliente guardado correctamente.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al guardar cliente: " + ex.Message);
-            }
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            GuardarCliente();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
@@ -104,6 +136,22 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         }
 
         private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtNumeroFactura_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtFechaProducto_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtNombreProducto_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void numCantidadProducto_ValueChanged(object sender, EventArgs e)
         {
         }
     }
