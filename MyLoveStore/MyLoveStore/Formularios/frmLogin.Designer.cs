@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(292, 30);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(517, 482);
             this.panel1.TabIndex = 0;
@@ -68,24 +68,26 @@
             this.btnIniciarSesión.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesión.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciarSesión.Location = new System.Drawing.Point(160, 394);
-            this.btnIniciarSesión.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIniciarSesión.Margin = new System.Windows.Forms.Padding(4);
             this.btnIniciarSesión.Name = "btnIniciarSesión";
             this.btnIniciarSesión.Size = new System.Drawing.Size(227, 66);
             this.btnIniciarSesión.TabIndex = 8;
             this.btnIniciarSesión.Text = "INICIAR SESIÓN";
             this.btnIniciarSesión.UseVisualStyleBackColor = false;
+            this.btnIniciarSesión.Click += new System.EventHandler(this.btnIniciarSesión_Click);
             // 
             // checkbContraseña
             // 
             this.checkbContraseña.AutoSize = true;
             this.checkbContraseña.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkbContraseña.Location = new System.Drawing.Point(30, 344);
-            this.checkbContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkbContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.checkbContraseña.Name = "checkbContraseña";
             this.checkbContraseña.Size = new System.Drawing.Size(140, 24);
             this.checkbContraseña.TabIndex = 7;
             this.checkbContraseña.Text = "Ver contraseña";
             this.checkbContraseña.UseVisualStyleBackColor = true;
+            this.checkbContraseña.CheckedChanged += new System.EventHandler(this.checkbContraseña_CheckedChanged);
             // 
             // tbContraseña
             // 
@@ -93,10 +95,11 @@
             this.tbContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbContraseña.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbContraseña.Location = new System.Drawing.Point(31, 294);
-            this.tbContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.tbContraseña.Name = "tbContraseña";
             this.tbContraseña.Size = new System.Drawing.Size(356, 27);
             this.tbContraseña.TabIndex = 6;
+            this.tbContraseña.TextChanged += new System.EventHandler(this.tbContraseña_TextChanged);
             // 
             // tbUsuario
             // 
@@ -104,10 +107,11 @@
             this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUsuario.Location = new System.Drawing.Point(29, 170);
-            this.tbUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(356, 27);
             this.tbUsuario.TabIndex = 5;
+            this.tbUsuario.TextChanged += new System.EventHandler(this.tbUsuario_TextChanged);
             // 
             // label3
             // 
@@ -141,7 +145,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(532, 82);
             this.panel2.TabIndex = 1;
@@ -182,7 +186,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.Text = "Inicio de Sesión";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Gerente.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Formularios\frmLogin.cs">
       <SubType>Form</SubType>

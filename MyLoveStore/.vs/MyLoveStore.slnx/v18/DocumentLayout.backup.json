@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\frmperfildeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\frmperfildeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\clases\\gerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\clases\\gerente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\oswel cardona\\onedrive\\desktop\\lenguaje pro\\mylovestore\\mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +26,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InterfazPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Design]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T02:30:39.623Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterfazPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAF8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T03:21:29.527Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gerente.cs",
+              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Clases\\Gerente.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Clases\\Gerente.cs",
+              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Clases\\Gerente.cs",
+              "RelativeToolTip": "MyLoveStore\\Clases\\Gerente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T01:57:01.405Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEntradaDatosFactura.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
+              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Design]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T03:38:30.062Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -54,91 +108,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InterfazPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Design]*",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:38:35.482Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmPerfilDeAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs [Design]",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\frmPerfilDeAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:38:15.511Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\frmLogin.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\frmLogin.cs [Design]",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:38:08.516Z",
-              "EditorCaption": " [Design]"
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormFacturaFinal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Design]",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:37:58.289Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormEntradaDatosFactura.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Design]",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:37:46.792Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inventario.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
-              "ToolTip": "C:\\Users\\Oswel Cardona\\OneDrive\\Desktop\\Lenguaje Pro\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Design]",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:37:34.671Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -38,3 +38,4 @@ C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
 C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb
+C:\Users\Oswel Cardona\OneDrive\Desktop\Lenguaje Pro\MyLoveStore\MyLoveStore\bin\Debug\Basedatos\Inventario del proyecto2.accdb

@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(-3, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1523, 111);
             this.panel1.TabIndex = 2;
@@ -97,6 +97,7 @@
             this.lblUsername.Size = new System.Drawing.Size(195, 46);
             this.lblUsername.TabIndex = 8;
             this.lblUsername.Text = "Username ";
+            this.lblUsername.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // pictureBox1
             // 
@@ -133,7 +134,7 @@
             this.panelEntrada.Controls.Add(this.pictureBox4);
             this.panelEntrada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelEntrada.Location = new System.Drawing.Point(133, 359);
-            this.panelEntrada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelEntrada.Margin = new System.Windows.Forms.Padding(2);
             this.panelEntrada.Name = "panelEntrada";
             this.panelEntrada.Size = new System.Drawing.Size(366, 163);
             this.panelEntrada.TabIndex = 9;
@@ -155,7 +156,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Location = new System.Drawing.Point(129, 54);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 7);
             this.panel2.TabIndex = 2;
@@ -175,12 +176,13 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(13, 28);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(91, 105);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // panelInventario
             // 
@@ -191,7 +193,7 @@
             this.panelInventario.Controls.Add(this.pictureBox5);
             this.panelInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelInventario.Location = new System.Drawing.Point(731, 359);
-            this.panelInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelInventario.Margin = new System.Windows.Forms.Padding(2);
             this.panelInventario.Name = "panelInventario";
             this.panelInventario.Size = new System.Drawing.Size(366, 163);
             this.panelInventario.TabIndex = 10;
@@ -212,7 +214,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Red;
             this.panel4.Location = new System.Drawing.Point(131, 54);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(197, 7);
             this.panel4.TabIndex = 2;
@@ -232,12 +234,13 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(13, 28);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(91, 105);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // InterfazPrincipal
             // 

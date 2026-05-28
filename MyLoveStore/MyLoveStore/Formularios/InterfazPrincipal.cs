@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MyLoveStore.Clases;
+using MyLoveStore.Formularios.Inventario1;
+using MyLoveStore.Formularios.Sistema_Facturación;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +15,22 @@ namespace MyLoveStore
 {
     public partial class InterfazPrincipal : Form
     {
-        public InterfazPrincipal()
+
+        private Gerente adminIngresado;
+        FormEntradaDatosFactura formEntradaFactura;
+        Inventario formInventario;
+
+        public InterfazPrincipal(Gerente admin_que_viene)
         {
             InitializeComponent();
+
+            this.adminIngresado = admin_que_viene;
+
         }
 
         private void InterfazPrincipal_Load(object sender, EventArgs e)
         {
-
+            lblUsername.Text = adminIngresado.Username;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -73,6 +84,25 @@ namespace MyLoveStore
         private void panelInventario_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FormEntradaDatosFactura formEntradaDatosFactura = new FormEntradaDatosFactura();
+            this.Close();
+            formEntradaDatosFactura.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Inventario formInventario = new Inventario();
+            this.Close();
+            formInventario.Show();
         }
     }
 }
