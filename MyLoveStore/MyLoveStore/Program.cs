@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyLoveStore
@@ -13,6 +10,7 @@ namespace MyLoveStore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura());
         }
     }

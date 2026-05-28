@@ -185,8 +185,13 @@
             this.ClientSize = new System.Drawing.Size(1067, 550);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+<<<<<<< HEAD
+=======
+            this.MaximizeBox = false;
+>>>>>>> d7fb31928034ec9e598e8a686a31a731e6e16a44
             this.Name = "frmLogin";
             this.Text = "Inicio de Sesión";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
