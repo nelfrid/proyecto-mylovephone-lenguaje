@@ -16,5 +16,10 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
