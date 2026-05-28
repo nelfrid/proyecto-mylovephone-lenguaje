@@ -11,7 +11,7 @@ namespace MyLoveStore
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MyLoveStore.Formularios.frmLogin());
+            Application.Run(new MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura());
         }
     }
 }

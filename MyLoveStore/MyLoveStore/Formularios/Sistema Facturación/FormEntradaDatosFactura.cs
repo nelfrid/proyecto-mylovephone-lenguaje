@@ -12,14 +12,14 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             InitializeComponent();
         }
 
-        private void GuardarCliente()
+        private int GuardarCliente()
         {
             using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
             {
                 conexion.Open();
 
-                string consulta = @"INSERT INTO Clientes 
-                (NombreCliente, CedulaCliente, CorreoCliente) 
+                string consulta = @"INSERT INTO Clientes
+                (NombreCliente, CedulaCliente, CorreoCliente)
                 VALUES (?, ?, ?)";
 
                 using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
@@ -27,13 +27,17 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                     comando.Parameters.AddWithValue("?", txtNombre.Text);
                     comando.Parameters.AddWithValue("?", txtCedula.Text);
                     comando.Parameters.AddWithValue("?", txtCorreo.Text);
-
                     comando.ExecuteNonQuery();
+                }
+
+                using (OleDbCommand obtenerId = new OleDbCommand("SELECT @@IDENTITY", conexion))
+                {
+                    return Convert.ToInt32(obtenerId.ExecuteScalar());
                 }
             }
         }
 
-        private void GuardarFactura()
+        private int GuardarFactura(int idCliente)
         {
             using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
             {
@@ -45,13 +49,68 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
                 using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
                 {
-                    comando.Parameters.AddWithValue("?", 1);
+                    comando.Parameters.AddWithValue("?", idCliente);
                     comando.Parameters.AddWithValue("?", txtNumeroFactura.Text);
                     comando.Parameters.AddWithValue("?", txtFechaProducto.Text);
                     comando.Parameters.AddWithValue("?", 0);
                     comando.Parameters.AddWithValue("?", 0);
                     comando.Parameters.AddWithValue("?", 0);
                     comando.Parameters.AddWithValue("?", "Pendiente");
+
+                    comando.ExecuteNonQuery();
+                }
+
+                using (OleDbCommand obtenerId = new OleDbCommand("SELECT @@IDENTITY", conexion))
+                {
+                    return Convert.ToInt32(obtenerId.ExecuteScalar());
+                }
+            }
+        }
+
+        private void GuardarDetalleFactura(int idFactura)
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string buscarProducto = "SELECT IdProducto, PrecioProducto FROM Productos WHERE NombreProducto = ?";
+
+                int idProducto = 0;
+                decimal precio = 0;
+
+                using (OleDbCommand buscar = new OleDbCommand(buscarProducto, conexion))
+                {
+                    buscar.Parameters.AddWithValue("?", txtNombreProducto.Text);
+
+                    using (OleDbDataReader lector = buscar.ExecuteReader())
+                    {
+                        if (lector.Read())
+                        {
+                            idProducto = Convert.ToInt32(lector["IdProducto"]);
+                            precio = Convert.ToDecimal(lector["PrecioProducto"]);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Producto no encontrado.");
+                            return;
+                        }
+                    }
+                }
+
+                int cantidad = Convert.ToInt32(numCantidadProducto.Value);
+                decimal subtotal = precio * cantidad;
+
+                string consulta = @"INSERT INTO DetalleFactura
+                (IdFactura, IdProducto, CantidadProducto, PrecioUnitario, SubtotalLinea)
+                VALUES (?, ?, ?, ?, ?)";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", idFactura);
+                    comando.Parameters.AddWithValue("?", idProducto);
+                    comando.Parameters.AddWithValue("?", cantidad);
+                    comando.Parameters.AddWithValue("?", precio);
+                    comando.Parameters.AddWithValue("?", subtotal);
 
                     comando.ExecuteNonQuery();
                 }
@@ -62,10 +121,11 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         {
             try
             {
-                GuardarCliente();
-                GuardarFactura();
+                int idCliente = GuardarCliente();
+                int idFactura = GuardarFactura(idCliente);
+                GuardarDetalleFactura(idFactura);
 
-                MessageBox.Show("Datos guardados correctamente.");
+                MessageBox.Show("Factura guardada correctamente.");
 
                 FormFacturaFinal formFacturaFinal = new FormFacturaFinal();
                 formFacturaFinal.Show();
