@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MyLoveStore.Clases;
+using System;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Data.OleDb;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyLoveStore.Formularios.Sistema_Facturación
 {
@@ -80,7 +82,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
                 using (OleDbCommand buscar = new OleDbCommand(buscarProducto, conexion))
                 {
-                    buscar.Parameters.AddWithValue("?", txtNombreProducto.Text);
+                    buscar.Parameters.AddWithValue("?", cmbProducto.Text);
 
                     using (OleDbDataReader lector = buscar.ExecuteReader())
                     {
@@ -119,6 +121,24 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            int idFacturaIngresado = Convert.ToInt32(txtNumeroFactura.Text);
+            string nombreClienteIngresado = txtNombre.Text;
+            string cedulaClienteIngresado = txtCedula.Text;
+            string fechaFacturacionIngresado = txtFechaProducto.Text;
+            string productoAdquirido = cmbProducto.Text;
+            int cantidad_productosIngresado = Convert.ToInt32(numCantidadProducto);
+            string correoClienteIngresado= txtCorreo.Text;
+
+            double total = 
+
+            Factura facturaFinal;
+
+            facturaFinal = new Factura(idFacturaIngresado, nombreClienteIngresado, cedulaClienteIngresado, fechaFacturacionIngresado, productoAdquirido, cantidad_productosIngresado, correoClienteIngresado);
+
+
+
+
+
             try
             {
                 int idCliente = GuardarCliente();
@@ -127,7 +147,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
                 MessageBox.Show("Factura guardada correctamente.");
 
-                FormFacturaFinal formFacturaFinal = new FormFacturaFinal();
+                FormFacturaFinal formFacturaFinal = new FormFacturaFinal(facturaFinal);
                 formFacturaFinal.Show();
                 this.Hide();
             }

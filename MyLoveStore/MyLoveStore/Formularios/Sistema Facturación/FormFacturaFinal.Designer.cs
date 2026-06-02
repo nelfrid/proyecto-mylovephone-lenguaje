@@ -40,14 +40,33 @@
             this.btnVolverfP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lbl_IdFactura = new System.Windows.Forms.Label();
+            this.lblTituloIdFactura = new System.Windows.Forms.Label();
+            this.lblFechaFacturacion = new System.Windows.Forms.Label();
+            this.lblTituloFechaFacturacion = new System.Windows.Forms.Label();
+            this.lblCantidadProductos = new System.Windows.Forms.Label();
+            this.lblTituloCantidadProductos = new System.Windows.Forms.Label();
+            this.lblProductoAdquirido = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblTituloCorreo = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.lblTituloCedula = new System.Windows.Forms.Label();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.lblTituloCliente = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblTituloTotal = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,18 +149,101 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.lbl_IdFactura);
+            this.panel2.Controls.Add(this.lblTituloIdFactura);
+            this.panel2.Controls.Add(this.lblFechaFacturacion);
+            this.panel2.Controls.Add(this.lblTituloFechaFacturacion);
+            this.panel2.Controls.Add(this.lblCantidadProductos);
+            this.panel2.Controls.Add(this.lblTituloCantidadProductos);
+            this.panel2.Controls.Add(this.lblProductoAdquirido);
+            this.panel2.Controls.Add(this.lbl);
+            this.panel2.Controls.Add(this.lblCorreo);
+            this.panel2.Controls.Add(this.lblTituloCorreo);
+            this.panel2.Controls.Add(this.lblCedula);
+            this.panel2.Controls.Add(this.lblTituloCedula);
+            this.panel2.Controls.Add(this.lblCliente);
+            this.panel2.Controls.Add(this.lblTituloCliente);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.panel3);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // button4
+            // lbl_IdFactura
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Desktop;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.lbl_IdFactura, "lbl_IdFactura");
+            this.lbl_IdFactura.Name = "lbl_IdFactura";
+            // 
+            // lblTituloIdFactura
+            // 
+            resources.ApplyResources(this.lblTituloIdFactura, "lblTituloIdFactura");
+            this.lblTituloIdFactura.Name = "lblTituloIdFactura";
+            // 
+            // lblFechaFacturacion
+            // 
+            resources.ApplyResources(this.lblFechaFacturacion, "lblFechaFacturacion");
+            this.lblFechaFacturacion.Name = "lblFechaFacturacion";
+            // 
+            // lblTituloFechaFacturacion
+            // 
+            resources.ApplyResources(this.lblTituloFechaFacturacion, "lblTituloFechaFacturacion");
+            this.lblTituloFechaFacturacion.Name = "lblTituloFechaFacturacion";
+            this.lblTituloFechaFacturacion.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lblCantidadProductos
+            // 
+            resources.ApplyResources(this.lblCantidadProductos, "lblCantidadProductos");
+            this.lblCantidadProductos.Name = "lblCantidadProductos";
+            // 
+            // lblTituloCantidadProductos
+            // 
+            resources.ApplyResources(this.lblTituloCantidadProductos, "lblTituloCantidadProductos");
+            this.lblTituloCantidadProductos.Name = "lblTituloCantidadProductos";
+            // 
+            // lblProductoAdquirido
+            // 
+            resources.ApplyResources(this.lblProductoAdquirido, "lblProductoAdquirido");
+            this.lblProductoAdquirido.Name = "lblProductoAdquirido";
+            // 
+            // lbl
+            // 
+            resources.ApplyResources(this.lbl, "lbl");
+            this.lbl.Name = "lbl";
+            // 
+            // lblCorreo
+            // 
+            resources.ApplyResources(this.lblCorreo, "lblCorreo");
+            this.lblCorreo.Name = "lblCorreo";
+            // 
+            // lblTituloCorreo
+            // 
+            resources.ApplyResources(this.lblTituloCorreo, "lblTituloCorreo");
+            this.lblTituloCorreo.Name = "lblTituloCorreo";
+            // 
+            // lblCedula
+            // 
+            resources.ApplyResources(this.lblCedula, "lblCedula");
+            this.lblCedula.Name = "lblCedula";
+            // 
+            // lblTituloCedula
+            // 
+            resources.ApplyResources(this.lblTituloCedula, "lblTituloCedula");
+            this.lblTituloCedula.Name = "lblTituloCedula";
+            // 
+            // lblCliente
+            // 
+            resources.ApplyResources(this.lblCliente, "lblCliente");
+            this.lblCliente.Name = "lblCliente";
+            // 
+            // lblTituloCliente
+            // 
+            resources.ApplyResources(this.lblTituloCliente, "lblTituloCliente");
+            this.lblTituloCliente.Name = "lblTituloCliente";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // panel3
             // 
@@ -157,6 +259,35 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.Desktop;
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.lblTotal);
+            this.panel4.Controls.Add(this.lblTituloTotal);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // lblTituloTotal
+            // 
+            resources.ApplyResources(this.lblTituloTotal, "lblTituloTotal");
+            this.lblTituloTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTituloTotal.Name = "lblTituloTotal";
+            // 
+            // lblTotal
+            // 
+            resources.ApplyResources(this.lblTotal, "lblTotal");
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.Name = "lblTotal";
+            // 
             // FormFacturaFinal
             // 
             resources.ApplyResources(this, "$this");
@@ -171,12 +302,16 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormFacturaFinal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormFacturaFinal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +333,23 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.Label lblTituloCliente;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.Label lblTituloCedula;
+        private System.Windows.Forms.Label lblTituloCorreo;
+        private System.Windows.Forms.Label lblCorreo;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblProductoAdquirido;
+        private System.Windows.Forms.Label lblTituloCantidadProductos;
+        private System.Windows.Forms.Label lblCantidadProductos;
+        private System.Windows.Forms.Label lblTituloFechaFacturacion;
+        private System.Windows.Forms.Label lblFechaFacturacion;
+        private System.Windows.Forms.Label lblTituloIdFactura;
+        private System.Windows.Forms.Label lbl_IdFactura;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblTituloTotal;
     }
 }
