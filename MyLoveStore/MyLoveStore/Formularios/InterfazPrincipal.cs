@@ -94,15 +94,17 @@ namespace MyLoveStore
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             FormEntradaDatosFactura formEntradaDatosFactura = new FormEntradaDatosFactura();
-            this.Close();
             formEntradaDatosFactura.Show();
+            this.Hide();
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Inventario formInventario = new Inventario();
-            this.Close();
             formInventario.Show();
+            this.Hide();
+            
         }
     }
 }

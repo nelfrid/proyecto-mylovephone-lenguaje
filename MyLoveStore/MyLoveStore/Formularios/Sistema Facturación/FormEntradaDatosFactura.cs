@@ -12,6 +12,22 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         public FormEntradaDatosFactura()
         {
             InitializeComponent();
+
+            cmbProducto.Items.Clear();
+
+
+            cmbProducto.Items.Add("Samsung S24 Ultra");
+            cmbProducto.Items.Add("Iphone 17 Pro Max");
+            cmbProducto.Items.Add("Google Pixel 10 Pro");
+            cmbProducto.Items.Add("Apple Airpods Gen 4");
+            cmbProducto.Items.Add("Audífonos Inalámbricos JBL Tune 720BT");
+            cmbProducto.Items.Add("Auriculares Inalámbricos JBL TUNE 130NC TWS");
+
+            if (cmbProducto.Items.Count > 0)
+            {
+                cmbProducto.SelectedIndex = 0;
+            }
+
         }
 
         private int GuardarCliente()
@@ -129,7 +145,6 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             int cantidad_productosIngresado = Convert.ToInt32(numCantidadProducto);
             string correoClienteIngresado= txtCorreo.Text;
 
-            double total = 
 
             Factura facturaFinal;
 
@@ -175,7 +190,9 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void FormEntradaDatosFactura_Load(object sender, EventArgs e)
         {
+
         }
+        
 
         private void panelDatos_Paint(object sender, PaintEventArgs e)
         {
@@ -233,6 +250,11 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void numCantidadProducto_ValueChanged(object sender, EventArgs e)
         {
+        }
+
+        private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
