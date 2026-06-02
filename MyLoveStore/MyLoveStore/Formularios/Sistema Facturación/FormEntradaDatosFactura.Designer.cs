@@ -44,6 +44,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.panelCard = new System.Windows.Forms.Panel();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.numCantidadProducto = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.txtProductoadquirido = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -243,6 +243,23 @@
             this.panelCard.TabIndex = 16;
             this.panelCard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCard_Paint);
             // 
+            // cmbProducto
+            // 
+            this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Items.AddRange(new object[] {
+            "Samsung S24 Ultra",
+            "Iphone 17 Pro Max",
+            "Google Pixel 10 Pro",
+            "Apple Airpods Gen 4",
+            "Audífonos Inalámbricos JBL Tune 720BT",
+            "Auriculares Inalámbricos JBL TUNE 130NC TWS"});
+            this.cmbProducto.Location = new System.Drawing.Point(280, 222);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(295, 24);
+            this.cmbProducto.TabIndex = 8;
+            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged_1);
+            // 
             // numCantidadProducto
             // 
             this.numCantidadProducto.Location = new System.Drawing.Point(319, 296);
@@ -352,22 +369,6 @@
             this.button1.Text = "Prueba de conexion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cmbProducto
-            // 
-            this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Items.AddRange(new object[] {
-            "Samsung S24 Ultra",
-            "Iphone 17 Pro Max",
-            "Google Pixel 10 Pro",
-            "Apple Airpods Gen 4",
-            "Audífonos Inalámbricos JBL Tune 720BT",
-            "Auriculares Inalámbricos JBL TUNE 130NC TWS"});
-            this.cmbProducto.Location = new System.Drawing.Point(280, 222);
-            this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(295, 24);
-            this.cmbProducto.TabIndex = 8;
             // 
             // FormEntradaDatosFactura
             // 

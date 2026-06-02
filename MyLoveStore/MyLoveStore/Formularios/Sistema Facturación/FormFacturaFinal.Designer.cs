@@ -40,6 +40,9 @@
             this.btnVolverfP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblTituloTotal = new System.Windows.Forms.Label();
             this.lbl_IdFactura = new System.Windows.Forms.Label();
             this.lblTituloIdFactura = new System.Windows.Forms.Label();
             this.lblFechaFacturacion = new System.Windows.Forms.Label();
@@ -58,15 +61,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblTituloTotal = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -169,6 +169,26 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.lblTotal);
+            this.panel4.Controls.Add(this.lblTituloTotal);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // lblTotal
+            // 
+            resources.ApplyResources(this.lblTotal, "lblTotal");
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.Name = "lblTotal";
+            // 
+            // lblTituloTotal
+            // 
+            resources.ApplyResources(this.lblTituloTotal, "lblTituloTotal");
+            this.lblTituloTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTituloTotal.Name = "lblTituloTotal";
+            // 
             // lbl_IdFactura
             // 
             resources.ApplyResources(this.lbl_IdFactura, "lbl_IdFactura");
@@ -251,6 +271,7 @@
             this.panel3.Controls.Add(this.pictureBox2);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox2
             // 
@@ -267,26 +288,6 @@
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.lblTotal);
-            this.panel4.Controls.Add(this.lblTituloTotal);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // lblTituloTotal
-            // 
-            resources.ApplyResources(this.lblTituloTotal, "lblTituloTotal");
-            this.lblTituloTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTituloTotal.Name = "lblTituloTotal";
-            // 
-            // lblTotal
-            // 
-            resources.ApplyResources(this.lblTotal, "lblTotal");
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTotal.Name = "lblTotal";
             // 
             // FormFacturaFinal
             // 
@@ -308,10 +309,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

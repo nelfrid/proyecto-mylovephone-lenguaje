@@ -137,28 +137,54 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            int idFacturaIngresado = Convert.ToInt32(txtNumeroFactura.Text);
-            string nombreClienteIngresado = txtNombre.Text;
-            string cedulaClienteIngresado = txtCedula.Text;
-            string fechaFacturacionIngresado = txtFechaProducto.Text;
-            string productoAdquirido = cmbProducto.Text;
-            int cantidad_productosIngresado = Convert.ToInt32(numCantidadProducto);
-            string correoClienteIngresado= txtCorreo.Text;
-
-
-            Factura facturaFinal;
-
-            facturaFinal = new Factura(idFacturaIngresado, nombreClienteIngresado, cedulaClienteIngresado, fechaFacturacionIngresado, productoAdquirido, cantidad_productosIngresado, correoClienteIngresado);
-
-
-
-
-
             try
             {
                 int idCliente = GuardarCliente();
-                int idFactura = GuardarFactura(idCliente);
-                GuardarDetalleFactura(idFactura);
+                int idFacturaBD = GuardarFactura(idCliente);
+                GuardarDetalleFactura(idFacturaBD);
+
+                decimal precioUnitario = 0;
+
+                using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+
+                    string consultaPrecio = "SELECT PrecioProducto FROM Productos WHERE NombreProducto = ?";
+
+                    using (OleDbCommand comando = new OleDbCommand(consultaPrecio, conexion))
+                    {
+                        comando.Parameters.AddWithValue("?", cmbProducto.Text);
+
+                        object resultado = comando.ExecuteScalar();
+
+                        if (resultado == null)
+                        {
+                            MessageBox.Show("No se encontró el precio del producto.");
+                            return;
+                        }
+
+                        precioUnitario = Convert.ToDecimal(resultado);
+                    }
+                }
+
+                int cantidad = Convert.ToInt32(numCantidadProducto.Value);
+                decimal subtotal = precioUnitario * cantidad;
+                decimal impuesto = subtotal * 0.07m;
+                decimal total = subtotal + impuesto;
+
+                Factura facturaFinal = new Factura(
+                    Convert.ToInt32(txtNumeroFactura.Text),
+                    txtNombre.Text,
+                    txtCedula.Text,
+                    txtFechaProducto.Text,
+                    cmbProducto.Text,
+                    cantidad,
+                    txtCorreo.Text,
+                    precioUnitario,
+                    subtotal,
+                    impuesto,
+                    total
+                );
 
                 MessageBox.Show("Factura guardada correctamente.");
 
@@ -253,6 +279,11 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         }
 
         private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbProducto_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
