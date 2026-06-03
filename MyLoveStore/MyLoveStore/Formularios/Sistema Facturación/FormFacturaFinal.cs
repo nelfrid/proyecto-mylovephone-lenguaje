@@ -65,5 +65,25 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
         }
+
+        private void lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProductoAdquirido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
