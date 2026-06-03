@@ -200,7 +200,7 @@ namespace MyLoveStore.Formularios.Inventario1
                 // éxito
                 textoError.Text = "Operación completada.";
                 textoError.Left = leftX;
-                textoError.Top = tbSeleccion.Bottom + 6;
+                textoError.Top = tbSeleccion.Bottom - 30; // -----------------------
                 textoError.Width = tbSeleccion.Width;
                 textoError.ForeColor = Color.Green;
                 textoError.Visible = true;
@@ -212,7 +212,7 @@ namespace MyLoveStore.Formularios.Inventario1
                 lblIndicacion.Visible = false;
                 lblIndicacion2.Visible = false;
                 tbSeleccion.Visible = false;
-                btnAgregar.Location = new Point(1017, 329);
+                btnAgregar.Location = new Point(760, 300); /////////////
             }
             catch (Exception ex)
             {
@@ -261,7 +261,7 @@ namespace MyLoveStore.Formularios.Inventario1
                     {
                         textoError.Text = "Ingrese el nombre del producto.";
                         textoError.Left = leftX;
-                        textoError.Top = tbSeleccion.Bottom + 6;
+                        textoError.Top = tbSeleccion.Bottom + 30;
                         textoError.Width = tbSeleccion.Width;
                         textoError.ForeColor = Color.Red;
                         textoError.Visible = true;
@@ -284,7 +284,7 @@ namespace MyLoveStore.Formularios.Inventario1
                     {
                         textoError.Text = "El ID debe ser un número válido.";
                         textoError.Left = leftX;
-                        textoError.Top = tbSeleccion.Bottom + 6;
+                        textoError.Top = tbSeleccion.Bottom + 30;
                         textoError.Width = tbSeleccion.Width;
                         textoError.ForeColor = Color.Red;
                         textoError.Visible = true;
@@ -307,7 +307,7 @@ namespace MyLoveStore.Formularios.Inventario1
                     {
                         textoError.Text = "La cantidad debe ser un número válido.";
                         textoError.Left = leftX;
-                        textoError.Top = tbSeleccion.Bottom + 6;
+                        textoError.Top = tbSeleccion.Bottom + 30;
                         textoError.Width = tbSeleccion.Width;
                         textoError.ForeColor = Color.Red;
                         textoError.Visible = true;
@@ -346,7 +346,7 @@ namespace MyLoveStore.Formularios.Inventario1
                         lblIndicacion2.Visible = false;
                         textoError.Visible = true;
                         CargarProductos();
-                        btnAgregar.Location = new Point(1017, 329);
+                        btnAgregar.Location = new Point(760, 329);
                     }
                     catch (Exception ex)
                     {
@@ -387,8 +387,8 @@ namespace MyLoveStore.Formularios.Inventario1
             textoError.Visible = false;
             btnVolver.Visible = false;
 
-            btnAgregar.Location = new Point(1017, 329);
-            btnEliminar.Location = new Point(1017, 226);
+            btnAgregar.Location = new Point(760, 300);
+            btnEliminar.Location = new Point(760, 200);
             btnAgregar.Text = "AGREGAR";
             agregarStep = 0;
         }
