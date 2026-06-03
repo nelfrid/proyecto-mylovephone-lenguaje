@@ -53,9 +53,8 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1513, 118);
+            this.panel1.Size = new System.Drawing.Size(1135, 96);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -63,10 +62,10 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(15, -49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(11, -40);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 223);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 181);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -81,13 +80,12 @@
             this.colCodigo,
             this.colNombreProducto,
             this.colValor});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 226);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 115);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(949, 640);
+            this.dataGridView1.Size = new System.Drawing.Size(681, 395);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -126,10 +124,9 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(1017, 226);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Location = new System.Drawing.Point(722, 398);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(160, 50);
+            this.btnEliminar.Size = new System.Drawing.Size(120, 41);
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -140,12 +137,11 @@
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregar.Location = new System.Drawing.Point(1017, 295);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(722, 127);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(160, 50);
+            this.btnAgregar.Size = new System.Drawing.Size(120, 41);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -153,14 +149,13 @@
             // 
             // lblIndicacion
             // 
-            this.lblIndicacion.AutoSize = true;
-            this.lblIndicacion.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblIndicacion.Location = new System.Drawing.Point(1007, 352);
+            this.lblIndicacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndicacion.Location = new System.Drawing.Point(718, 253);
+            this.lblIndicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicacion.Name = "lblIndicacion";
-            this.lblIndicacion.Size = new System.Drawing.Size(344, 23);
+            this.lblIndicacion.Size = new System.Drawing.Size(192, 48);
             this.lblIndicacion.TabIndex = 7;
-            this.lblIndicacion.Text = "Selecciona el tipo de selección de producto:";
-            this.lblIndicacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblIndicacion.Text = "Selecciona el tipo de producto:";
             this.lblIndicacion.Visible = false;
             // 
             // cbTipoSeleccionEliminacion
@@ -170,29 +165,34 @@
             this.cbTipoSeleccionEliminacion.Items.AddRange(new object[] {
             "ID",
             "NOMBRE"});
-            this.cbTipoSeleccionEliminacion.Location = new System.Drawing.Point(1017, 312);
+            this.cbTipoSeleccionEliminacion.Location = new System.Drawing.Point(722, 312);
+            this.cbTipoSeleccionEliminacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbTipoSeleccionEliminacion.Name = "cbTipoSeleccionEliminacion";
-            this.cbTipoSeleccionEliminacion.Size = new System.Drawing.Size(250, 33);
+            this.cbTipoSeleccionEliminacion.Size = new System.Drawing.Size(188, 28);
             this.cbTipoSeleccionEliminacion.TabIndex = 8;
             this.cbTipoSeleccionEliminacion.Visible = false;
             // 
             // lblIndicacion2
             // 
             this.lblIndicacion2.AutoSize = true;
-            this.lblIndicacion2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblIndicacion2.Location = new System.Drawing.Point(1013, 325);
+            this.lblIndicacion2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIndicacion2.Location = new System.Drawing.Point(718, 183);
+            this.lblIndicacion2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicacion2.Name = "lblIndicacion2";
-            this.lblIndicacion2.Size = new System.Drawing.Size(63, 23);
+            this.lblIndicacion2.Size = new System.Drawing.Size(59, 21);
             this.lblIndicacion2.TabIndex = 9;
             this.lblIndicacion2.Text = "Escriba";
             this.lblIndicacion2.Visible = false;
             // 
             // tbSeleccion
             // 
-            this.tbSeleccion.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.tbSeleccion.Location = new System.Drawing.Point(1017, 351);
+            this.tbSeleccion.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.tbSeleccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSeleccion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSeleccion.Location = new System.Drawing.Point(722, 215);
+            this.tbSeleccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSeleccion.Name = "tbSeleccion";
-            this.tbSeleccion.Size = new System.Drawing.Size(250, 30);
+            this.tbSeleccion.Size = new System.Drawing.Size(188, 22);
             this.tbSeleccion.TabIndex = 10;
             this.tbSeleccion.Visible = false;
             // 
@@ -203,10 +203,9 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnVolver.Location = new System.Drawing.Point(1185, 226);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Location = new System.Drawing.Point(12, 525);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(160, 50);
+            this.btnVolver.Size = new System.Drawing.Size(120, 41);
             this.btnVolver.TabIndex = 11;
             this.btnVolver.Text = "VOLVER";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -218,19 +217,21 @@
             this.textoError.AutoSize = true;
             this.textoError.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textoError.ForeColor = System.Drawing.Color.Red;
-            this.textoError.Location = new System.Drawing.Point(1008, 325);
+            this.textoError.Location = new System.Drawing.Point(719, 355);
+            this.textoError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textoError.Name = "textoError";
-            this.textoError.Size = new System.Drawing.Size(317, 20);
+            this.textoError.Size = new System.Drawing.Size(251, 15);
             this.textoError.TabIndex = 12;
             this.textoError.Text = "Intentelo de nuevo. Se debe elegir una opcion.";
             this.textoError.Visible = false;
             // 
             // Inventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1512, 922);
+            this.ClientSize = new System.Drawing.Size(1035, 609);
             this.Controls.Add(this.textoError);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.tbSeleccion);
@@ -243,7 +244,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Inventario";
             this.Text = "Inventario | MyLovePhone";
