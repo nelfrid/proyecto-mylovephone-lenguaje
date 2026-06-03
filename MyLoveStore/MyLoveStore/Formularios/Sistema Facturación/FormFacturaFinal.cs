@@ -20,9 +20,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
             documento.PrintPage += Documento_PrintPage;
         }
-        Label lblPrecioUnitario;
-        Label lblSubtotal;
-        Label lblImpuesto;
+       
         private void FormFacturaFinal_Load(object sender, EventArgs e)
         {
             lblClientes.Text = factura.NombreCliente;
