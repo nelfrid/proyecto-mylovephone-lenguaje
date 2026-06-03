@@ -40,18 +40,18 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void FormFacturaFinal_Load(object sender, EventArgs e)
         {
-            lblCliente.Text = nombreClienteIngresado;
-            lblCedula.Text = cedulaClienteIngresado;
-            lblProductoAdquirido.Text = productoAdquirido;
-            lblCantidadProductos.Text = cantidad_productosIngresado.ToString();
-            lblCorreo.Text = correoClienteIngresado;
-            lblFechaFacturacion.Text = fechaFacturacionIngresado;
-            lbl_IdFactura.Text = idFacturaIngresado.ToString();
+            lblClientes.Text = nombreClienteIngresado;
+            lblCedulas.Text = cedulaClienteIngresado;
+            lblCorreos.Text = correoClienteIngresado;
+            lblProductos.Text = productoAdquirido;
+            lblCantidades.Text = cantidad_productosIngresado.ToString();
+            lblFechas.Text = fechaFacturacionIngresado;
+            lblID.Text = idFacturaIngresado.ToString();
 
-            lblPrecioUnitario.Text = "B/. " + precioUnitario.ToString("0.00");
+            lblPu.Text = "B/. " + precioUnitario.ToString("0.00");
             lblSubtotal.Text = "B/. " + subtotal.ToString("0.00");
-            lblImpuesto.Text = "B/. " + impuesto.ToString("0.00");
-            lblTotal.Text = "B/. " + total.ToString("0.00");
+            lblItbms.Text = "B/. " + impuesto.ToString("0.00");
+            lblTotales.Text = "B/. " + total.ToString("0.00");
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -63,6 +63,38 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void lbl_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblProductoAdquirido_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label26_Click(object sender, EventArgs e)
         {
         }
     }

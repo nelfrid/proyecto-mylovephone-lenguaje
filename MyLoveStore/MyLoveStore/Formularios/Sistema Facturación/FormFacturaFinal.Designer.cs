@@ -40,6 +40,37 @@
             this.btnVolverfP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblPrecioUnitario = new System.Windows.Forms.Label();
+            this.lblPu = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblTotales = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblFechas = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblCantidades = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.lblProductos = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblCorreos = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lblCedulas = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lblClientes = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblTituloTotal = new System.Windows.Forms.Label();
@@ -61,9 +92,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.lblItbms = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -149,6 +185,11 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.lbl_IdFactura);
             this.panel2.Controls.Add(this.lblTituloIdFactura);
@@ -168,6 +209,201 @@
             this.panel2.Controls.Add(this.panel3);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.lblItbms);
+            this.panel5.Controls.Add(this.label29);
+            this.panel5.Controls.Add(this.lblSubtotal);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblPrecioUnitario);
+            this.panel5.Controls.Add(this.lblPu);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.lblID);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.lblFechas);
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Controls.Add(this.lblCantidades);
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.lblProductos);
+            this.panel5.Controls.Add(this.label21);
+            this.panel5.Controls.Add(this.lblCorreos);
+            this.panel5.Controls.Add(this.label23);
+            this.panel5.Controls.Add(this.lblCedulas);
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Controls.Add(this.lblClientes);
+            this.panel5.Controls.Add(this.label27);
+            this.panel5.Controls.Add(this.label28);
+            this.panel5.Controls.Add(this.panel7);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // lblSubtotal
+            // 
+            resources.ApplyResources(this.lblSubtotal, "lblSubtotal");
+            this.lblSubtotal.Name = "lblSubtotal";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // lblPrecioUnitario
+            // 
+            resources.ApplyResources(this.lblPrecioUnitario, "lblPrecioUnitario");
+            this.lblPrecioUnitario.Name = "lblPrecioUnitario";
+            this.lblPrecioUnitario.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // lblPu
+            // 
+            resources.ApplyResources(this.lblPu, "lblPu");
+            this.lblPu.Name = "lblPu";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.lblTotales);
+            this.panel6.Controls.Add(this.label13);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // lblTotales
+            // 
+            resources.ApplyResources(this.lblTotales, "lblTotales");
+            this.lblTotales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotales.Name = "lblTotales";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Name = "label13";
+            // 
+            // lblID
+            // 
+            resources.ApplyResources(this.lblID, "lblID");
+            this.lblID.Name = "lblID";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // lblFechas
+            // 
+            resources.ApplyResources(this.lblFechas, "lblFechas");
+            this.lblFechas.Name = "lblFechas";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // lblCantidades
+            // 
+            resources.ApplyResources(this.lblCantidades, "lblCantidades");
+            this.lblCantidades.Name = "lblCantidades";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // lblProductos
+            // 
+            resources.ApplyResources(this.lblProductos, "lblProductos");
+            this.lblProductos.Name = "lblProductos";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // lblCorreos
+            // 
+            resources.ApplyResources(this.lblCorreos, "lblCorreos");
+            this.lblCorreos.Name = "lblCorreos";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // lblCedulas
+            // 
+            resources.ApplyResources(this.lblCedulas, "lblCedulas");
+            this.lblCedulas.Name = "lblCedulas";
+            this.lblCedulas.Click += new System.EventHandler(this.label24_Click);
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // lblClientes
+            // 
+            resources.ApplyResources(this.lblClientes, "lblClientes");
+            this.lblClientes.Name = "lblClientes";
+            this.lblClientes.Click += new System.EventHandler(this.label26_Click);
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.pictureBox3);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel4
             // 
@@ -224,11 +460,13 @@
             // 
             resources.ApplyResources(this.lblProductoAdquirido, "lblProductoAdquirido");
             this.lblProductoAdquirido.Name = "lblProductoAdquirido";
+            this.lblProductoAdquirido.Click += new System.EventHandler(this.lblProductoAdquirido_Click);
             // 
             // lbl
             // 
             resources.ApplyResources(this.lbl, "lbl");
             this.lbl.Name = "lbl";
+            this.lbl.Click += new System.EventHandler(this.lbl_Click);
             // 
             // lblCorreo
             // 
@@ -289,6 +527,11 @@
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // lblItbms
+            // 
+            resources.ApplyResources(this.lblItbms, "lblItbms");
+            this.lblItbms.Name = "lblItbms";
+            // 
             // FormFacturaFinal
             // 
             resources.ApplyResources(this, "$this");
@@ -309,6 +552,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -352,5 +601,37 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblTituloTotal;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblPrecioUnitario;
+        private System.Windows.Forms.Label lblPu;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblTotales;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblFechas;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblCantidades;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblProductos;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblCorreos;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lblCedulas;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lblClientes;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblItbms;
     }
 }
