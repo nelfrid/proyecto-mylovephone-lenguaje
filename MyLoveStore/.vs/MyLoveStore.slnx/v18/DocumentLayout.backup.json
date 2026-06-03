@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\rolan\\onedrive\\desktop\\ultimo proyecyofianl\\mylovestore\\mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\rolan\\onedrive\\desktop\\ultimo proyecyofianl\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -19,12 +27,12 @@
       "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\interfazprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\inventario1\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\clases\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\clases\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|c:\\users\\rolan\\onedrive\\desktop\\ultimo proyecyofianl\\mylovestore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\sistema facturaci\u00F3n\\formfacturafinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\sistema facturaci\u00F3n\\formentradadatosfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\mylovestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B87BEEA-1A19-4B6D-A695-9756D783FAFA}|MyLoveStore\\MyLoveStore.csproj|solutionrelative:mylovestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,45 +89,38 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Clases\\Factura.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Clases\\Factura.cs",
-              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Clases\\Factura.cs",
-              "RelativeToolTip": "MyLoveStore\\Clases\\Factura.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA/wC4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:33:44.755Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs*",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T05:26:57.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormFacturaFinal.cs",
               "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
-              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs*",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs*",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAABKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-02T15:32:21.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormFacturaFinal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
-              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:31:54.859Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FormEntradaDatosFactura.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
@@ -135,29 +132,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InterfazPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
-              "ToolTip": "C:\\Users\\rolan\\source\\repos\\nelfrid\\proyecto-mylovephone-lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\nelfrid\\proyecto-mylovephone-lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:24:43.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Inventario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs",
-              "ToolTip": "C:\\Users\\rolan\\source\\repos\\nelfrid\\proyecto-mylovephone-lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\nelfrid\\proyecto-mylovephone-lenguaje\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Inventario1\\Inventario.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:24:43.418Z"
+              "WhenOpened": "2026-06-02T15:24:43.418Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Program.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Program.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Program.cs",
+              "RelativeToolTip": "MyLoveStore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:24:42.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormFacturaFinal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormFacturaFinal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:31:54.859Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Clases\\Factura.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Clases\\Factura.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Clases\\Factura.cs",
+              "RelativeToolTip": "MyLoveStore\\Clases\\Factura.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwC4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:33:44.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InterfazPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\InterfazPrincipal.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "MyLoveStore\\Formularios\\InterfazPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:24:43.415Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FormEntradaDatosFactura.cs",
               "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\Sistema Facturaci\u00F3n\\FormEntradaDatosFactura.cs",
@@ -170,19 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Program.cs",
-              "RelativeDocumentMoniker": "MyLoveStore\\Program.cs",
-              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Program.cs",
-              "RelativeToolTip": "MyLoveStore\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-02T15:24:42.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "frmLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Desktop\\Ultimo proyecyofianl\\MyLoveStore\\MyLoveStore\\Formularios\\frmLogin.cs",
               "RelativeDocumentMoniker": "MyLoveStore\\Formularios\\frmLogin.cs",
