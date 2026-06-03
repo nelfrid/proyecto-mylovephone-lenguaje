@@ -24,17 +24,49 @@ namespace MyLoveStore.Formularios.Inventario1
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            btnAgregar.Location = new Point(760, 500); // Quitar visibilidad a agregar
 
-        }
+            // Hacer visible opciones de eliminacion de producto
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
 
-        }
+            cbTipoSeleccionEliminacion.Visible = true;
+            lblIndicacion.Visible = true;
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
+            btnEliminar.Text = "Siguiente";
+            btnVolver.Visible = true;
 
-        }
+            if (cbTipoSeleccionEliminacion.Text.ToString() == "ID") // ---------------------------------------------------------------
+            {
+
+                // Se selecciona el producto a eliminar por ID
+
+                lblIndicacion2.Visible = true;
+                lblIndicacion2.Text = "Ingrese el ID del producto a eliminar: ";
+                tbSeleccion.Visible = true;
+
+                // Condicional para eliminar producto por ID
+
+            }
+
+            else if (cbTipoSeleccionEliminacion.Text.ToString() == "NOMBRE") // ---------------------------------------------------------------
+            {
+                // Se selecciona el producto a eliminar por Nombre
+                lblIndicacion2.Visible = true;
+                lblIndicacion2.Text = "Ingrese el Nombre del producto a eliminar: ";
+                tbSeleccion.Visible = true;
+                // Condicional para eliminar producto por Nombre)
+
+                // CONDICIONAL PARA ELIMINAR PRODUCTO POR NOMBRE
+
+            }
+            else
+            {
+                textoError.Visible = true;
+                lblIndicacion.Location = new Point(1007, 352);
+                cbTipoSeleccionEliminacion.Location = new Point(1011, 380);
+            }
+
+
+            }
     }
 }

@@ -37,7 +37,9 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             impuesto = factura_que_viene.Impuesto;
             total = factura_que_viene.Total;
         }
-
+        Label lblPrecioUnitario;
+        Label lblSubtotal;
+        Label lblImpuesto;
         private void FormFacturaFinal_Load(object sender, EventArgs e)
         {
             lblCliente.Text = nombreClienteIngresado;
