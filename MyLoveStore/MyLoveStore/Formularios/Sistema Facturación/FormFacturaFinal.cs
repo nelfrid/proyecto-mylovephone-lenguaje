@@ -1,59 +1,68 @@
 ﻿using MyLoveStore.Clases;
 using System;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 
 namespace MyLoveStore.Formularios.Sistema_Facturación
 {
     public partial class FormFacturaFinal : Form
     {
-        private string nombreClienteIngresado;
-        private int idFacturaIngresado;
-        private string cedulaClienteIngresado;
-        private string fechaFacturacionIngresado;
-        private string productoAdquirido;
-        private int cantidad_productosIngresado;
-        private string correoClienteIngresado;
-
-        private decimal precioUnitario;
-        private decimal subtotal;
-        private decimal impuesto;
-        private decimal total;
+        private Factura factura;
+        private PrintDocument documento = new PrintDocument();
+        private Bitmap imagenFactura;
 
         public FormFacturaFinal(Factura factura_que_viene)
         {
             InitializeComponent();
 
-            nombreClienteIngresado = factura_que_viene.NombreCliente;
-            idFacturaIngresado = factura_que_viene.IdFactura;
-            cedulaClienteIngresado = factura_que_viene.CedulaCliente;
-            fechaFacturacionIngresado = factura_que_viene.FechaFacturacion;
-            productoAdquirido = factura_que_viene.ProductoAdquirido;
-            cantidad_productosIngresado = factura_que_viene.Cantidad_de_productosAdquiridos;
-            correoClienteIngresado = factura_que_viene.CorreoCliente;
+            factura = factura_que_viene;
 
-            precioUnitario = factura_que_viene.PrecioUnitario;
-            subtotal = factura_que_viene.Subtotal;
-            impuesto = factura_que_viene.Impuesto;
-            total = factura_que_viene.Total;
+            documento.PrintPage += Documento_PrintPage;
         }
         Label lblPrecioUnitario;
         Label lblSubtotal;
         Label lblImpuesto;
         private void FormFacturaFinal_Load(object sender, EventArgs e)
         {
-            lblCliente.Text = nombreClienteIngresado;
-            lblCedula.Text = cedulaClienteIngresado;
-            lblProductoAdquirido.Text = productoAdquirido;
-            lblCantidadProductos.Text = cantidad_productosIngresado.ToString();
-            lblCorreo.Text = correoClienteIngresado;
-            lblFechaFacturacion.Text = fechaFacturacionIngresado;
-            lbl_IdFactura.Text = idFacturaIngresado.ToString();
+            lblClientes.Text = factura.NombreCliente;
+            lblCedulas.Text = factura.CedulaCliente;
+            lblCorreos.Text = factura.CorreoCliente;
+            lblProductos.Text = factura.ProductoAdquirido;
+            lblCantidades.Text = factura.Cantidad_de_productosAdquiridos.ToString();
+            lblFechas.Text = factura.FechaFacturacion;
+            lblID.Text = factura.IdFactura.ToString();
 
-            lblPrecioUnitario.Text = "B/. " + precioUnitario.ToString("0.00");
-            lblSubtotal.Text = "B/. " + subtotal.ToString("0.00");
-            lblImpuesto.Text = "B/. " + impuesto.ToString("0.00");
-            lblTotal.Text = "B/. " + total.ToString("0.00");
+            lblPU.Text = "B/. " + factura.PrecioUnitario.ToString("0.00");
+            lblSubtotal.Text = "B/. " + factura.Subtotal.ToString("0.00");
+            lblItbms.Text = "B/. " + factura.Impuesto.ToString("0.00");
+            lblTotales.Text = "B/. " + factura.Total.ToString("0.00");
+        }
+
+        private void Documento_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(imagenFactura, 50, 50);
+        }
+
+        private void btnEnviarFactura_Click(object sender, EventArgs e)
+        {
+            imagenFactura = new Bitmap(panel2.Width, panel2.Height);
+
+            panel2.DrawToBitmap(
+                imagenFactura,
+                new Rectangle(0, 0, panel2.Width, panel2.Height)
+            );
+
+            documento.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+            PrintDialog dialogo = new PrintDialog();
+            dialogo.Document = documento;
+
+            if (dialogo.ShowDialog() == DialogResult.OK)
+            {
+                documento.Print();
+                MessageBox.Show("Factura PDF generada correctamente.");
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -65,6 +74,10 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void lblTotales_Click(object sender, EventArgs e)
         {
         }
     }
