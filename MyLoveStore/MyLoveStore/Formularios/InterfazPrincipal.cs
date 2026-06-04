@@ -101,7 +101,7 @@ namespace MyLoveStore
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Inventario formInventario = new Inventario();
+            Inventario formInventario = new Inventario(adminIngresado);
             formInventario.Show();
             this.Hide();
             

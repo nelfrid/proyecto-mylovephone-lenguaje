@@ -16,28 +16,13 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         public FormEntradaDatosFactura(Gerente admin_que_viene)
         {
             InitializeComponent();
+            this.adminIngresado = admin_que_viene;
             CargarProductosEnCombo();
         }
 
-<<<<<<< HEAD
-            this.adminIngresado = admin_que_viene;
-
-            cmbProducto.Items.Clear();
-
-
-            cmbProducto.Items.Add("Samsung S24 Ultra");
-            cmbProducto.Items.Add("Iphone 17 Pro Max");
-            cmbProducto.Items.Add("Google Pixel 10 Pro");
-            cmbProducto.Items.Add("Apple Airpods Gen 4");
-            cmbProducto.Items.Add("Audífonos Inalámbricos JBL Tune 720BT");
-            cmbProducto.Items.Add("Auriculares Inalámbricos JBL TUNE 130NC TWS");
-
-            if (cmbProducto.Items.Count > 0)
-=======
         private void CargarProductosEnCombo()
         {
             try
->>>>>>> 454b7b4bb225762e66cb6ccdfd69051eec75f6c1
             {
                 cmbProducto.Items.Clear();
 
@@ -249,7 +234,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
                 MessageBox.Show("Factura guardada correctamente.");
 
-                FormFacturaFinal formFacturaFinal = new FormFacturaFinal(facturaFinal);
+                FormFacturaFinal formFacturaFinal = new FormFacturaFinal(facturaFinal, adminIngresado);
                 formFacturaFinal.Show();
                 this.Hide();
             }

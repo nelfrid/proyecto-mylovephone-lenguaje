@@ -9,14 +9,16 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
     public partial class FormFacturaFinal : Form
     {
         private Factura factura;
+        private Gerente adminIngresado;
         private PrintDocument documento = new PrintDocument();
         private Bitmap imagenFactura;
 
-        public FormFacturaFinal(Factura factura_que_viene)
+        public FormFacturaFinal(Factura factura_que_viene, Gerente admin_que_viene)
         {
             InitializeComponent();
 
             factura = factura_que_viene;
+            adminIngresado = admin_que_viene;
 
             documento.PrintPage += Documento_PrintPage;
         }
@@ -77,6 +79,13 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void lblTotales_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnVolverfP_Click(object sender, EventArgs e)
+        {
+            InterfazPrincipal formInterfazPrincipal = new InterfazPrincipal(adminIngresado);
+            formInterfazPrincipal.Show();
+            this.Hide();
         }
     }
 }

@@ -30,10 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFacturaFinal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.username = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEnviarFactura = new System.Windows.Forms.Button();
             this.btnVolverfP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -75,16 +73,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.username);
             this.panel1.Controls.Add(this.pictureBox1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // username
-            // 
-            resources.ApplyResources(this.username, "username");
-            this.username.ForeColor = System.Drawing.Color.White;
-            this.username.Name = "username";
             // 
             // pictureBox1
             // 
@@ -97,15 +88,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // btnEnviarFactura
-            // 
-            this.btnEnviarFactura.BackColor = System.Drawing.SystemColors.Desktop;
-            resources.ApplyResources(this.btnEnviarFactura, "btnEnviarFactura");
-            this.btnEnviarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEnviarFactura.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEnviarFactura.Name = "btnEnviarFactura";
-            this.btnEnviarFactura.UseVisualStyleBackColor = false;
-            // 
             // btnVolverfP
             // 
             this.btnVolverfP.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -115,6 +97,7 @@
             this.btnVolverfP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnVolverfP.Name = "btnVolverfP";
             this.btnVolverfP.UseVisualStyleBackColor = false;
+            this.btnVolverfP.Click += new System.EventHandler(this.btnVolverfP_Click);
             // 
             // label2
             // 
@@ -312,14 +295,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnVolverfP);
-            this.Controls.Add(this.btnEnviarFactura);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "FormFacturaFinal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormFacturaFinal_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -335,10 +316,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label username;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEnviarFactura;
         private System.Windows.Forms.Button btnVolverfP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;

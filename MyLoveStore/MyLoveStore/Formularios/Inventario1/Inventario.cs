@@ -9,25 +9,20 @@ namespace MyLoveStore.Formularios.Inventario1
 {
     public partial class Inventario : Form
     {
-<<<<<<< HEAD
-
         private Gerente adminIngresado;
         InterfazPrincipal formInterfazPrincipal;
 
         // Estado para flujo de agregar producto
-        private int agregarStep = 0; // 0 = inactivo, 1 = pedir nombre, 2 = pedir ID, 3 = pedir cantidad
+        private int agregarStep = 0; // 0 = inactivo, 1 = pedir nombre, 2 = pedir ID, 3 = pedir cantidad, 4 = pedir precio
         private string nuevoNombre = string.Empty;
-=======
-        private int agregarStep = 0;
-        private string nuevoNombre = "";
->>>>>>> 454b7b4bb225762e66cb6ccdfd69051eec75f6c1
         private int nuevoId = 0;
         private decimal nuevoPrecio = 0;
         private int nuevaCantidad = 0;
 
-        public Inventario()
+        public Inventario(Gerente admin_que_viene)
         {
             InitializeComponent();
+            this.adminIngresado = admin_que_viene;
         }
 
         private void Inventario_Load(object sender, EventArgs e)
@@ -356,7 +351,7 @@ namespace MyLoveStore.Formularios.Inventario1
             lblIndicacion2.Visible = false;
             tbSeleccion.Visible = false;
             textoError.Visible = false;
-            btnVolver.Visible = false;
+            btnVolver.Visible = true;
 
             btnAgregar.Location = new Point(760, 300);
             btnEliminar.Location = new Point(760, 200);
@@ -364,9 +359,7 @@ namespace MyLoveStore.Formularios.Inventario1
             btnEliminar.Text = "ELIMINAR";
             agregarStep = 0;
 
-            InterfazPrincipal formInterfazPrincipal = new InterfazPrincipal(adminIngresado);
-            formInterfazPrincipal.Show();
-            this.Hide();
+            
 
 
 
@@ -374,6 +367,13 @@ namespace MyLoveStore.Formularios.Inventario1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void btnVolverInterfazPrincipal_Click(object sender, EventArgs e)
+        {
+            InterfazPrincipal formInterfazPrincipal = new InterfazPrincipal(adminIngresado);
+            formInterfazPrincipal.Show();
+            this.Hide();
         }
     }
 }

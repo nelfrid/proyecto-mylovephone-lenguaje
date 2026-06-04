@@ -12,13 +12,9 @@ namespace MyLoveStore
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
+            // Start the application with the login form by default. If you want to launch the main interface directly,
+            // create a Gerente instance and pass it to InterfazPrincipal instead.
             Application.Run(new MyLoveStore.Formularios.frmLogin());
-=======
-            Gerente admin = new Gerente("user-admin", "0000");
-
-            Application.Run(new InterfazPrincipal(admin));
->>>>>>> 454b7b4bb225762e66cb6ccdfd69051eec75f6c1
         }
     }
 }
