@@ -192,7 +192,7 @@
             this.tbSeleccion.BackColor = System.Drawing.SystemColors.MenuBar;
             this.tbSeleccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSeleccion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSeleccion.Location = new System.Drawing.Point(963, 319);
+            this.tbSeleccion.Location = new System.Drawing.Point(963, 390);
             this.tbSeleccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSeleccion.Name = "tbSeleccion";
             this.tbSeleccion.Size = new System.Drawing.Size(251, 27);
@@ -221,7 +221,7 @@
             this.textoError.AutoSize = true;
             this.textoError.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textoError.ForeColor = System.Drawing.Color.Red;
-            this.textoError.Location = new System.Drawing.Point(959, 306);
+            this.textoError.Location = new System.Drawing.Point(958, 339);
             this.textoError.Name = "textoError";
             this.textoError.Size = new System.Drawing.Size(317, 20);
             this.textoError.TabIndex = 12;

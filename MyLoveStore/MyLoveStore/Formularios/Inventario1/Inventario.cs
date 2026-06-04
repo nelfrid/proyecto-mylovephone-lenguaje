@@ -150,7 +150,7 @@ namespace MyLoveStore.Formularios.Inventario1
 
                 // Posicionamiento de controles en la pantalla
                 cbTipoSeleccionEliminacion.Left = leftX;
-                cbTipoSeleccionEliminacion.Top = btnEliminar.Bottom + 50;
+                cbTipoSeleccionEliminacion.Top = 230;
                 lblIndicacion.Left = leftX;
                 lblIndicacion.Top = cbTipoSeleccionEliminacion.Top - lblIndicacion.Height - 15;
                 lblIndicacion2.Left = leftX;

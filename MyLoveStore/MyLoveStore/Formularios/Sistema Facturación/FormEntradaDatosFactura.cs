@@ -12,7 +12,6 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         private Gerente adminIngresado;
         InterfazPrincipal formInterfazPrincipal;
 
-
         public FormEntradaDatosFactura(Gerente admin_que_viene)
         {
             InitializeComponent();
@@ -157,6 +156,33 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             }
         }
 
+        // NUEVO:
+        // Este método consulta cuántas unidades quedan disponibles del producto.
+        // Se usa antes de guardar la factura para evitar vender productos sin stock.
+        private int ObtenerStockProducto(int idProducto)
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string consulta = "SELECT CantidadProducto FROM Productos WHERE IdProducto = ?";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", idProducto);
+
+                    object resultado = comando.ExecuteScalar();
+
+                    if (resultado == null || resultado == DBNull.Value)
+                    {
+                        return 0;
+                    }
+
+                    return Convert.ToInt32(resultado);
+                }
+            }
+        }
+
         private void GuardarDetalleFactura(int idFactura, int idProducto, int cantidad, decimal precioUnitario, decimal subtotal)
         {
             using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
@@ -175,6 +201,27 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                     comando.Parameters.AddWithValue("?", precioUnitario);
                     comando.Parameters.AddWithValue("?", subtotal);
 
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
+        // Este método descuenta del inventario la cantidad vendida.
+        // Ejemplo: si hay 60 productos y el cliente compra 1, la base de datos queda con 59.
+        private void DescontarInventario(int idProducto, int cantidadVendida)
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string consulta = @"UPDATE Productos
+                                    SET CantidadProducto = CantidadProducto - ?
+                                    WHERE IdProducto = ?";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", cantidadVendida);
+                    comando.Parameters.AddWithValue("?", idProducto);
                     comando.ExecuteNonQuery();
                 }
             }
@@ -208,6 +255,24 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                     return;
                 }
 
+                // NUEVO:
+                // Aquí se valida el stock antes de guardar cualquier dato.
+                // Si el producto tiene 0 unidades, no se vende y no se genera factura.
+                // Si el cliente pide más unidades de las disponibles, tampoco se genera factura.
+                int stockDisponible = ObtenerStockProducto(idProducto);
+
+                if (stockDisponible <= 0)
+                {
+                    MessageBox.Show("No se puede vender este producto porque no hay stock disponible.");
+                    return;
+                }
+
+                if (cantidad > stockDisponible)
+                {
+                    MessageBox.Show("No se puede vender esa cantidad. Solo hay " + stockDisponible + " disponible(s).");
+                    return;
+                }
+
                 decimal precioUnitario = ObtenerPrecioProducto(producto);
                 decimal subtotal = precioUnitario * cantidad;
                 decimal impuesto = subtotal * 0.07m;
@@ -217,6 +282,10 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                 int idFacturaBD = GuardarFactura(idCliente, subtotal, impuesto, total);
 
                 GuardarDetalleFactura(idFacturaBD, idProducto, cantidad, precioUnitario, subtotal);
+
+                // Aquí se actualiza el inventario después de guardar la factura.
+                // Esto solo ocurre si sí había stock suficiente.
+                DescontarInventario(idProducto, cantidad);
 
                 Factura facturaFinal = new Factura(
                     Convert.ToInt32(txtNumeroFactura.Text),
