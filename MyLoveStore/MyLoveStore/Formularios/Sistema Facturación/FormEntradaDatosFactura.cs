@@ -1,4 +1,5 @@
 ﻿using MyLoveStore.Clases;
+using MyLoveStore.Formularios.Inventario1;
 using System;
 using System.Data.OleDb;
 using System.Drawing;
@@ -9,9 +10,15 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 {
     public partial class FormEntradaDatosFactura : Form
     {
-        public FormEntradaDatosFactura()
+        private Gerente adminIngresado;
+        InterfazPrincipal formInterfazPrincipal;
+
+
+        public FormEntradaDatosFactura(Gerente admin_que_viene)
         {
             InitializeComponent();
+
+            this.adminIngresado = admin_que_viene;
 
             cmbProducto.Items.Clear();
 
@@ -286,6 +293,13 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         private void cmbProducto_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            InterfazPrincipal formInterfazPrincipal = new InterfazPrincipal(adminIngresado);
+            formInterfazPrincipal.Show();
+            this.Hide();
         }
     }
 }

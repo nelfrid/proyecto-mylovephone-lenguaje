@@ -93,7 +93,7 @@ namespace MyLoveStore
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            FormEntradaDatosFactura formEntradaDatosFactura = new FormEntradaDatosFactura();
+            FormEntradaDatosFactura formEntradaDatosFactura = new FormEntradaDatosFactura(adminIngresado);
             formEntradaDatosFactura.Show();
             this.Hide();
             

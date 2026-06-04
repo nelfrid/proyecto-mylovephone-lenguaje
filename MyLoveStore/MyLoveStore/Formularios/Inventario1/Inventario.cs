@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyLoveStore.Clases;
+using System;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
@@ -8,6 +9,10 @@ namespace MyLoveStore.Formularios.Inventario1
 {
     public partial class Inventario : Form
     {
+
+        private Gerente adminIngresado;
+        InterfazPrincipal formInterfazPrincipal;
+
         // Estado para flujo de agregar producto
         private int agregarStep = 0; // 0 = inactivo, 1 = pedir nombre, 2 = pedir ID, 3 = pedir cantidad
         private string nuevoNombre = string.Empty;
@@ -391,6 +396,13 @@ namespace MyLoveStore.Formularios.Inventario1
             btnEliminar.Location = new Point(760, 200);
             btnAgregar.Text = "AGREGAR";
             agregarStep = 0;
+
+            InterfazPrincipal formInterfazPrincipal = new InterfazPrincipal(adminIngresado);
+            formInterfazPrincipal.Show();
+            this.Hide();
+
+
+
         }
     }
 }
