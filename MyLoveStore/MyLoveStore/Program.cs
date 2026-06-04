@@ -29,7 +29,7 @@ namespace MyLoveStore
             // Inicia la aplicación directamente con el formulario de Inventario
             // Se crea una instancia de Gerente para pasar al formulario
             Gerente adminPrueba = new Gerente("user-admin", "0000");
-            Application.Run(new MyLoveStore.Formularios.Inventario1.Inventario(adminPrueba));
+            Application.Run(new MyLoveStore.Formularios.frmLogin());
         }
     }
 }
