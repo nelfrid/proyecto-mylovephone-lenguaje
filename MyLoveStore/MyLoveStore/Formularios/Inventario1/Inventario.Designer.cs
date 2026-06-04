@@ -127,7 +127,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEliminar.Location = new System.Drawing.Point(963, 517);
+            this.btnEliminar.Location = new System.Drawing.Point(1131, 156);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(160, 50);
@@ -155,11 +155,11 @@
             // lblIndicacion
             // 
             this.lblIndicacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndicacion.Location = new System.Drawing.Point(957, 311);
+            this.lblIndicacion.Location = new System.Drawing.Point(958, 223);
             this.lblIndicacion.Name = "lblIndicacion";
-            this.lblIndicacion.Size = new System.Drawing.Size(256, 59);
+            this.lblIndicacion.Size = new System.Drawing.Size(256, 29);
             this.lblIndicacion.TabIndex = 7;
-            this.lblIndicacion.Text = "Selecciona el tipo de producto:";
+            this.lblIndicacion.Text = "Elige el tipo de selección:";
             this.lblIndicacion.Visible = false;
             // 
             // cbTipoSeleccionEliminacion
@@ -169,7 +169,7 @@
             this.cbTipoSeleccionEliminacion.Items.AddRange(new object[] {
             "ID",
             "NOMBRE"});
-            this.cbTipoSeleccionEliminacion.Location = new System.Drawing.Point(962, 402);
+            this.cbTipoSeleccionEliminacion.Location = new System.Drawing.Point(962, 254);
             this.cbTipoSeleccionEliminacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTipoSeleccionEliminacion.Name = "cbTipoSeleccionEliminacion";
             this.cbTipoSeleccionEliminacion.Size = new System.Drawing.Size(249, 33);
@@ -180,11 +180,11 @@
             // 
             this.lblIndicacion2.AutoSize = true;
             this.lblIndicacion2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndicacion2.Location = new System.Drawing.Point(957, 225);
+            this.lblIndicacion2.Location = new System.Drawing.Point(958, 289);
             this.lblIndicacion2.Name = "lblIndicacion2";
-            this.lblIndicacion2.Size = new System.Drawing.Size(73, 28);
+            this.lblIndicacion2.Size = new System.Drawing.Size(165, 28);
             this.lblIndicacion2.TabIndex = 9;
-            this.lblIndicacion2.Text = "Escriba";
+            this.lblIndicacion2.Text = "Rellene el campo:";
             this.lblIndicacion2.Visible = false;
             // 
             // tbSeleccion
@@ -192,7 +192,7 @@
             this.tbSeleccion.BackColor = System.Drawing.SystemColors.MenuBar;
             this.tbSeleccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSeleccion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSeleccion.Location = new System.Drawing.Point(963, 265);
+            this.tbSeleccion.Location = new System.Drawing.Point(963, 319);
             this.tbSeleccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSeleccion.Name = "tbSeleccion";
             this.tbSeleccion.Size = new System.Drawing.Size(251, 27);
@@ -221,7 +221,7 @@
             this.textoError.AutoSize = true;
             this.textoError.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textoError.ForeColor = System.Drawing.Color.Red;
-            this.textoError.Location = new System.Drawing.Point(958, 455);
+            this.textoError.Location = new System.Drawing.Point(959, 306);
             this.textoError.Name = "textoError";
             this.textoError.Size = new System.Drawing.Size(317, 20);
             this.textoError.TabIndex = 12;
