@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MyLoveStore.Clases;
 
 namespace MyLoveStore
 {
@@ -11,7 +12,9 @@ namespace MyLoveStore
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new MyLoveStore.Formularios.Inventario1.Inventario());
+            Gerente admin = new Gerente("user-admin", "0000");
+
+            Application.Run(new InterfazPrincipal(admin));
         }
     }
 }

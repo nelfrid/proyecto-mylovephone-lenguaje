@@ -3,7 +3,6 @@ using System;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyLoveStore.Formularios.Sistema_Facturación
 {
@@ -12,22 +11,40 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         public FormEntradaDatosFactura()
         {
             InitializeComponent();
+            CargarProductosEnCombo();
+        }
 
-            cmbProducto.Items.Clear();
-
-
-            cmbProducto.Items.Add("Samsung S24 Ultra");
-            cmbProducto.Items.Add("Iphone 17 Pro Max");
-            cmbProducto.Items.Add("Google Pixel 10 Pro");
-            cmbProducto.Items.Add("Apple Airpods Gen 4");
-            cmbProducto.Items.Add("Audífonos Inalámbricos JBL Tune 720BT");
-            cmbProducto.Items.Add("Auriculares Inalámbricos JBL TUNE 130NC TWS");
-
-            if (cmbProducto.Items.Count > 0)
+        private void CargarProductosEnCombo()
+        {
+            try
             {
-                cmbProducto.SelectedIndex = 0;
-            }
+                cmbProducto.Items.Clear();
 
+                using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+                {
+                    conexion.Open();
+
+                    string consulta = "SELECT NombreProducto FROM Productos WHERE EstadoProducto = 'Activo'";
+
+                    using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                    using (OleDbDataReader lector = comando.ExecuteReader())
+                    {
+                        while (lector.Read())
+                        {
+                            cmbProducto.Items.Add(lector["NombreProducto"].ToString());
+                        }
+                    }
+                }
+
+                if (cmbProducto.Items.Count > 0)
+                {
+                    cmbProducto.SelectedIndex = 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar productos: " + ex.Message);
+            }
         }
 
         private int GuardarCliente()
@@ -55,7 +72,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             }
         }
 
-        private int GuardarFactura(int idCliente)
+        private int GuardarFactura(int idCliente, decimal subtotal, decimal impuesto, decimal total)
         {
             using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
             {
@@ -70,9 +87,9 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                     comando.Parameters.AddWithValue("?", idCliente);
                     comando.Parameters.AddWithValue("?", txtNumeroFactura.Text);
                     comando.Parameters.AddWithValue("?", txtFechaProducto.Text);
-                    comando.Parameters.AddWithValue("?", 0);
-                    comando.Parameters.AddWithValue("?", 0);
-                    comando.Parameters.AddWithValue("?", 0);
+                    comando.Parameters.AddWithValue("?", subtotal);
+                    comando.Parameters.AddWithValue("?", impuesto);
+                    comando.Parameters.AddWithValue("?", total);
                     comando.Parameters.AddWithValue("?", "Pendiente");
 
                     comando.ExecuteNonQuery();
@@ -85,38 +102,60 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
             }
         }
 
-        private void GuardarDetalleFactura(int idFactura)
+        private int ObtenerIdProducto(string nombreProducto)
         {
             using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
             {
                 conexion.Open();
 
-                string buscarProducto = "SELECT IdProducto, PrecioProducto FROM Productos WHERE NombreProducto = ?";
+                string consulta = "SELECT IdProducto FROM Productos WHERE NombreProducto = ?";
 
-                int idProducto = 0;
-                decimal precio = 0;
-
-                using (OleDbCommand buscar = new OleDbCommand(buscarProducto, conexion))
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
                 {
-                    buscar.Parameters.AddWithValue("?", cmbProducto.Text);
+                    comando.Parameters.AddWithValue("?", nombreProducto);
 
-                    using (OleDbDataReader lector = buscar.ExecuteReader())
+                    object resultado = comando.ExecuteScalar();
+
+                    if (resultado == null || resultado == DBNull.Value)
                     {
-                        if (lector.Read())
-                        {
-                            idProducto = Convert.ToInt32(lector["IdProducto"]);
-                            precio = Convert.ToDecimal(lector["PrecioProducto"]);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Producto no encontrado.");
-                            return;
-                        }
+                        return 0;
                     }
-                }
 
-                int cantidad = Convert.ToInt32(numCantidadProducto.Value);
-                decimal subtotal = precio * cantidad;
+                    return Convert.ToInt32(resultado);
+                }
+            }
+        }
+
+        private decimal ObtenerPrecioProducto(string nombreProducto)
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
+
+                string consulta = "SELECT PrecioProducto FROM Productos WHERE UCASE(TRIM(NombreProducto)) = UCASE(TRIM(?))";
+
+                using (OleDbCommand comando = new OleDbCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("?", nombreProducto);
+
+                    object resultado = comando.ExecuteScalar();
+
+                    if (resultado == null || resultado == DBNull.Value)
+                    {
+                        MessageBox.Show("El producto no tiene precio registrado.");
+                        return 0;
+                    }
+
+                    return Convert.ToDecimal(resultado);
+                }
+            }
+        }
+
+        private void GuardarDetalleFactura(int idFactura, int idProducto, int cantidad, decimal precioUnitario, decimal subtotal)
+        {
+            using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                conexion.Open();
 
                 string consulta = @"INSERT INTO DetalleFactura
                 (IdFactura, IdProducto, CantidadProducto, PrecioUnitario, SubtotalLinea)
@@ -127,7 +166,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
                     comando.Parameters.AddWithValue("?", idFactura);
                     comando.Parameters.AddWithValue("?", idProducto);
                     comando.Parameters.AddWithValue("?", cantidad);
-                    comando.Parameters.AddWithValue("?", precio);
+                    comando.Parameters.AddWithValue("?", precioUnitario);
                     comando.Parameters.AddWithValue("?", subtotal);
 
                     comando.ExecuteNonQuery();
@@ -139,45 +178,46 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
         {
             try
             {
-                int idCliente = GuardarCliente();
-                int idFacturaBD = GuardarFactura(idCliente);
-                GuardarDetalleFactura(idFacturaBD);
+                string producto = cmbProducto.Text;
 
-                decimal precioUnitario = 0;
-
-                using (OleDbConnection conexion = ConexionBD.ObtenerConexion())
+                if (string.IsNullOrWhiteSpace(producto))
                 {
-                    conexion.Open();
-
-                    string consultaPrecio = "SELECT PrecioProducto FROM Productos WHERE NombreProducto = ?";
-
-                    using (OleDbCommand comando = new OleDbCommand(consultaPrecio, conexion))
-                    {
-                        comando.Parameters.AddWithValue("?", cmbProducto.Text);
-
-                        object resultado = comando.ExecuteScalar();
-
-                        if (resultado == null)
-                        {
-                            MessageBox.Show("No se encontró el precio del producto.");
-                            return;
-                        }
-
-                        precioUnitario = Convert.ToDecimal(resultado);
-                    }
+                    MessageBox.Show("Debe seleccionar un producto.");
+                    return;
                 }
 
                 int cantidad = Convert.ToInt32(numCantidadProducto.Value);
+
+                if (cantidad <= 0)
+                {
+                    MessageBox.Show("La cantidad debe ser mayor que cero.");
+                    return;
+                }
+
+                int idProducto = ObtenerIdProducto(producto);
+
+                if (idProducto == 0)
+                {
+                    MessageBox.Show("Producto no encontrado.");
+                    return;
+                }
+
+                decimal precioUnitario = ObtenerPrecioProducto(producto);
                 decimal subtotal = precioUnitario * cantidad;
                 decimal impuesto = subtotal * 0.07m;
                 decimal total = subtotal + impuesto;
+
+                int idCliente = GuardarCliente();
+                int idFacturaBD = GuardarFactura(idCliente, subtotal, impuesto, total);
+
+                GuardarDetalleFactura(idFacturaBD, idProducto, cantidad, precioUnitario, subtotal);
 
                 Factura facturaFinal = new Factura(
                     Convert.ToInt32(txtNumeroFactura.Text),
                     txtNombre.Text,
                     txtCedula.Text,
                     txtFechaProducto.Text,
-                    cmbProducto.Text,
+                    producto,
                     cantidad,
                     txtCorreo.Text,
                     precioUnitario,
@@ -216,9 +256,7 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void FormEntradaDatosFactura_Load(object sender, EventArgs e)
         {
-
         }
-        
 
         private void panelDatos_Paint(object sender, PaintEventArgs e)
         {
@@ -280,12 +318,10 @@ namespace MyLoveStore.Formularios.Sistema_Facturación
 
         private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void cmbProducto_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
         }
     }
 }
