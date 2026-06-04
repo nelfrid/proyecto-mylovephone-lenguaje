@@ -52,3 +52,22 @@ C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\De
 C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.es-PA.resources
 C:\Users\nxlfr\OneDrive\Desktop\Proyecto Lenguaje\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
 >>>>>>> d7fb31928034ec9e598e8a686a31a731e6e16a44
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\bin\Debug\Basedatos\Inventario del proyecto2.accdb
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe.config
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.exe
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\bin\Debug\MyLoveStore.pdb
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\bin\Debug\es-PA\MyLoveStore.resources.dll
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.AssemblyReference.cache
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmLogin.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.frmPerfilDeAdmin.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.InterfazPrincipal.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Inventario1.Inventario.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormEntradaDatosFactura.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Properties.Resources.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.Formularios.Sistema_Facturación.FormFacturaFinal.es-PA.resources
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.GenerateResource.cache
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.csproj.CoreCompileInputs.cache
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\es-PA\MyLoveStore.resources.dll
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.exe
+C:\Users\Nicole-David\source\repos\Proyecto_MyLovePhone\MyLoveStore\MyLoveStore\obj\Debug\MyLoveStore.pdb

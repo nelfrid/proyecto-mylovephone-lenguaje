@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEntradaDatosFactura));
             this.panel1 = new System.Windows.Forms.Panel();
             this.username = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
@@ -55,77 +52,45 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             this.panelCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidadProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Controls.Add(this.username);
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-11, -8);
+            this.panel1.Controls.Add(this.username);
+            this.panel1.Location = new System.Drawing.Point(-8, -6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1793, 95);
+            this.panel1.Size = new System.Drawing.Size(1345, 87);
             this.panel1.TabIndex = 1;
             // 
             // username
             // 
             this.username.AutoSize = true;
-            this.username.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.White;
-            this.username.Location = new System.Drawing.Point(1368, 40);
+            this.username.Location = new System.Drawing.Point(889, 35);
+            this.username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(89, 23);
+            this.username.Size = new System.Drawing.Size(101, 25);
             this.username.TabIndex = 3;
             this.username.Text = "Username";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1311, 35);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1259, 35);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(69, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 97);
+            this.label1.Location = new System.Drawing.Point(21, 96);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 36);
+            this.label1.Size = new System.Drawing.Size(218, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Entrada de Datos";
             // 
@@ -133,9 +98,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 147);
+            this.label2.Location = new System.Drawing.Point(22, 131);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(229, 31);
+            this.label2.Size = new System.Drawing.Size(190, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Permítenos ayudarte";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -149,10 +115,10 @@
             this.panelDatos.Controls.Add(this.txtCedula);
             this.panelDatos.Controls.Add(this.label8);
             this.panelDatos.Controls.Add(this.txtNombre);
-            this.panelDatos.Location = new System.Drawing.Point(35, 206);
+            this.panelDatos.Location = new System.Drawing.Point(26, 167);
             this.panelDatos.Margin = new System.Windows.Forms.Padding(2);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(594, 408);
+            this.panelDatos.Size = new System.Drawing.Size(446, 332);
             this.panelDatos.TabIndex = 15;
             this.panelDatos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDatos_Paint);
             // 
@@ -160,11 +126,11 @@
             // 
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(98, 233);
+            this.txtCorreo.Location = new System.Drawing.Point(74, 189);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(312, 28);
+            this.txtCorreo.Size = new System.Drawing.Size(234, 23);
             this.txtCorreo.TabIndex = 12;
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
@@ -172,10 +138,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(15, 230);
+            this.label6.Location = new System.Drawing.Point(11, 187);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 25);
+            this.label6.Size = new System.Drawing.Size(60, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Correo:";
             // 
@@ -183,10 +149,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(15, 36);
+            this.label7.Location = new System.Drawing.Point(11, 29);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(180, 25);
+            this.label7.Size = new System.Drawing.Size(141, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Nombre completo:";
             // 
@@ -194,11 +160,11 @@
             // 
             this.txtCedula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCedula.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedula.Location = new System.Drawing.Point(98, 126);
+            this.txtCedula.Location = new System.Drawing.Point(74, 102);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(2);
             this.txtCedula.Multiline = true;
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(312, 28);
+            this.txtCedula.Size = new System.Drawing.Size(234, 23);
             this.txtCedula.TabIndex = 10;
             this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
@@ -206,10 +172,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(15, 124);
+            this.label8.Location = new System.Drawing.Point(11, 101);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 25);
+            this.label8.Size = new System.Drawing.Size(60, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "Cédula:";
             // 
@@ -217,11 +183,11 @@
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(205, 38);
+            this.txtNombre.Location = new System.Drawing.Point(154, 31);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(326, 26);
+            this.txtNombre.Size = new System.Drawing.Size(245, 22);
             this.txtNombre.TabIndex = 7;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -236,10 +202,10 @@
             this.panelCard.Controls.Add(this.label5);
             this.panelCard.Controls.Add(this.txtNumeroFactura);
             this.panelCard.Controls.Add(this.label9);
-            this.panelCard.Location = new System.Drawing.Point(673, 206);
+            this.panelCard.Location = new System.Drawing.Point(505, 167);
             this.panelCard.Margin = new System.Windows.Forms.Padding(2);
             this.panelCard.Name = "panelCard";
-            this.panelCard.Size = new System.Drawing.Size(668, 408);
+            this.panelCard.Size = new System.Drawing.Size(501, 332);
             this.panelCard.TabIndex = 16;
             this.panelCard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCard_Paint);
             // 
@@ -254,18 +220,19 @@
             "Apple Airpods Gen 4",
             "Audífonos Inalámbricos JBL Tune 720BT",
             "Auriculares Inalámbricos JBL TUNE 130NC TWS"});
-            this.cmbProducto.Location = new System.Drawing.Point(280, 222);
+            this.cmbProducto.Location = new System.Drawing.Point(210, 180);
+            this.cmbProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(295, 24);
+            this.cmbProducto.Size = new System.Drawing.Size(222, 21);
             this.cmbProducto.TabIndex = 8;
             this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged_1);
             // 
             // numCantidadProducto
             // 
-            this.numCantidadProducto.Location = new System.Drawing.Point(319, 296);
+            this.numCantidadProducto.Location = new System.Drawing.Point(239, 240);
             this.numCantidadProducto.Margin = new System.Windows.Forms.Padding(2);
             this.numCantidadProducto.Name = "numCantidadProducto";
-            this.numCantidadProducto.Size = new System.Drawing.Size(88, 22);
+            this.numCantidadProducto.Size = new System.Drawing.Size(66, 20);
             this.numCantidadProducto.TabIndex = 7;
             this.numCantidadProducto.ValueChanged += new System.EventHandler(this.numCantidadProducto_ValueChanged);
             // 
@@ -273,10 +240,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 291);
+            this.label3.Location = new System.Drawing.Point(8, 236);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 25);
+            this.label3.Size = new System.Drawing.Size(164, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Cantidad de producto:";
             // 
@@ -284,20 +251,20 @@
             // 
             this.txtProductoadquirido.AutoSize = true;
             this.txtProductoadquirido.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductoadquirido.Location = new System.Drawing.Point(43, 226);
+            this.txtProductoadquirido.Location = new System.Drawing.Point(32, 184);
             this.txtProductoadquirido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtProductoadquirido.Name = "txtProductoadquirido";
-            this.txtProductoadquirido.Size = new System.Drawing.Size(194, 25);
+            this.txtProductoadquirido.Size = new System.Drawing.Size(148, 20);
             this.txtProductoadquirido.TabIndex = 4;
             this.txtProductoadquirido.Text = "Producto adquirido:";
             // 
             // txtFechaProducto
             // 
-            this.txtFechaProducto.Location = new System.Drawing.Point(280, 140);
+            this.txtFechaProducto.Location = new System.Drawing.Point(210, 114);
             this.txtFechaProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaProducto.Multiline = true;
             this.txtFechaProducto.Name = "txtFechaProducto";
-            this.txtFechaProducto.Size = new System.Drawing.Size(319, 30);
+            this.txtFechaProducto.Size = new System.Drawing.Size(240, 25);
             this.txtFechaProducto.TabIndex = 3;
             this.txtFechaProducto.TextChanged += new System.EventHandler(this.txtFechaProducto_TextChanged);
             // 
@@ -305,20 +272,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 136);
+            this.label5.Location = new System.Drawing.Point(16, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 25);
+            this.label5.Size = new System.Drawing.Size(157, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Fecha de facturacion:";
             // 
             // txtNumeroFactura
             // 
-            this.txtNumeroFactura.Location = new System.Drawing.Point(280, 54);
+            this.txtNumeroFactura.Location = new System.Drawing.Point(210, 44);
             this.txtNumeroFactura.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroFactura.Multiline = true;
             this.txtNumeroFactura.Name = "txtNumeroFactura";
-            this.txtNumeroFactura.Size = new System.Drawing.Size(319, 30);
+            this.txtNumeroFactura.Size = new System.Drawing.Size(240, 25);
             this.txtNumeroFactura.TabIndex = 1;
             this.txtNumeroFactura.TextChanged += new System.EventHandler(this.txtNumeroFactura_TextChanged);
             // 
@@ -326,22 +293,23 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(36, 54);
+            this.label9.Location = new System.Drawing.Point(27, 44);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 25);
+            this.label9.Size = new System.Drawing.Size(146, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "Numero de factura:";
             // 
             // btnSiguiente
             // 
             this.btnSiguiente.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(1223, 647);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSiguiente.Location = new System.Drawing.Point(854, 505);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(117, 38);
+            this.btnSiguiente.Size = new System.Drawing.Size(154, 32);
             this.btnSiguiente.TabIndex = 18;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
@@ -350,32 +318,51 @@
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(35, 641);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolver.Location = new System.Drawing.Point(26, 506);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(117, 38);
+            this.btnVolver.Size = new System.Drawing.Size(214, 31);
             this.btnVolver.TabIndex = 17;
-            this.btnVolver.Text = "Volver";
+            this.btnVolver.Text = "Volver al Menu Principal";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(621, 126);
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(505, 97);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 42);
+            this.button1.Size = new System.Drawing.Size(165, 34);
             this.button1.TabIndex = 19;
             this.button1.Text = "Prueba de conexion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox2.Location = new System.Drawing.Point(26, -35);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(194, 166);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // FormEntradaDatosFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 675);
+            this.ClientSize = new System.Drawing.Size(1020, 548);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.btnVolver);
@@ -384,20 +371,19 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormEntradaDatosFactura";
             this.Text = "MyLovePhone | Entrada de datos factura";
             this.Load += new System.EventHandler(this.FormEntradaDatosFactura_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDatos_Paint);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             this.panelCard.ResumeLayout(false);
             this.panelCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidadProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,9 +393,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelDatos;
@@ -431,5 +414,6 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbProducto;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
