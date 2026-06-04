@@ -42,8 +42,8 @@ namespace MyLoveStore.Clases
         /// <param name="key">Contraseña (no se utiliza, se usa el valor por defecto)</param>
         public Gerente(string username, string key)
         {
-            this.username = "user-admin";
-            this.key = "0000";
+            this.username = "Cesar Liao";
+            this.key = "MyLovePhone2026";
         }
     }
 }

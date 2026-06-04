@@ -62,7 +62,7 @@ namespace MyLoveStore.Formularios
 
             // BLOQUE 2: Creación de instancia del Gerente
             Gerente admin;
-            admin = new Gerente("user-admin", "0000");
+            admin = new Gerente("Cesar Liao", "MyLovePhone2026");
 
             // BLOQUE 3: Apertura de la interfaz principal
             // Crea una nueva instancia de la interfaz principal y la muestra
